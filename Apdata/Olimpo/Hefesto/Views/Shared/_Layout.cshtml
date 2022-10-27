@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/datatable.js"></script>
+    <script src="~/js/site.js"></script>
+
+    <link rel="stylesheet" href="~/css/datatable.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="~/css/colors.css" />
+    <link rel="stylesheet" href="~/css/stars.css" />
+    <link rel="stylesheet" href="~/css/custom.css" />
+    <link rel="stylesheet" href="~/css/pages.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+
+
+</head>
+
+<body>
+    <div background-image class="menu white">
+
+        <div class="card">
+
+            <img src="~/Images/robo.png" class="logo" />
+            <div>
+                <br />
+                <b>
+                    Bem-vinde,<br />
+                    Menine
+                </b>
+            </div>
+        </div>
+        <a href="~/Inicio/Index"><i class="fa fa-home"></i> Início</></a><br />
+        <a href="~/Cliente/Index"><i class="fa fa-briefcase"></i> Clientes</a><br />
+        <a href="~/Servico/Index"><i class="fa fa-gear"></i> Serviços</a><br />
+        <a href="~/Servidor/Index"><i class="fa fa-database"></i> Servidores</a><br />
+        <a href="~/Relatorio/Index"><i class="fa fa-paperclip"></i> Relatórios</a><br />
+        <a><i class="fa fa-desktop"></i> Monitor<i style="font-size: 12px;"> (em breve)</i></a><br />
+        <a href="~/Informacao/Index" class="menuLista"><i class="fa fa-info-circle"></i> Informações</a><br />
+        <a href="~/Informacao/Index" class="menuLista"><i class="fa fa-sign-out"></i> Sair</a><br />
+        
+        <div class="social">
+            <a href="https://github.com/re-coffee" target="_blank"><i class="fa fa-github github"></i></a>
+            <a href="~/Inicio/Index"><i class="fa fa-linkedin linkedin"></i></a>
+        </div>
+        <div class="footer">
+            <img src="~/Images/logo-footer.png" /><br />
+            Apdata do Brasil Software 2022
+            <br />Aplicação v1.0
+        </div>
+    </div>
+    <div class="principal">
+        @RenderBody()
+    </div>
+
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+</body>
+</html>

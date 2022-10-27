@@ -1,0 +1,72 @@
+﻿/*efeitos*/
+.transparente{
+    color: transparent;
+    background-color: transparent;
+}
+
+/*Cores base*/
+.black {
+    color: rgba(0, 0, 0)
+}
+
+.white {
+    color: rgb(255, 255, 255)
+}
+
+/*Tons de cinza*/
+.grey {
+    color: rgb(235, 235, 235)
+}
+
+.darkgrey {
+    color: rgb(60, 60, 60)
+}
+
+/*Tons de verde*/
+.green {
+    color: rgb(6, 115, 66)
+}
+
+.darkgreen {
+    color: rgb(0, 83, 52)
+}
+
+/*Tons de laranja*/
+.orange {
+    color: rgb(212, 150, 0)
+}
+
+.darkorange {
+    color: rgb(154, 119, 53)
+}
+
+/*Tons de vermelho*/
+.red {
+    color: rgb(212, 32, 20)
+}
+
+.darkred {
+    color: rgb(143, 19, 11)
+}
+
+/*Tons de azul*/
+.blue {
+    color: rgb(0, 162, 237)
+}
+
+.darkblue {
+    color: rgb(1, 70, 102)
+}
+
+/*Social*/
+.github {
+    background-color: rgb(110, 84, 148);
+    border: 5px solid rgb(110, 84, 148);
+    border-radius: 20px;
+}
+
+.linkedin {
+    background-color: rgb(0, 119, 181);
+    border: 5px solid rgb(0, 119, 181);
+    border-radius: 20px;
+}

@@ -1,0 +1,15 @@
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.csproj.AssemblyReference.cache
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.GeneratedMSBuildEditorConfig.editorconfig
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.AssemblyInfoInputs.cache
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.AssemblyInfo.cs
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.csproj.CoreCompileInputs.cache
+S:\Sof\ApCleanse\bin\Release\net6.0\ApCleanse.exe
+S:\Sof\ApCleanse\bin\Release\net6.0\ApCleanse.deps.json
+S:\Sof\ApCleanse\bin\Release\net6.0\ApCleanse.runtimeconfig.json
+S:\Sof\ApCleanse\bin\Release\net6.0\ApCleanse.dll
+S:\Sof\ApCleanse\bin\Release\net6.0\ApCleanse.pdb
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.dll
+S:\Sof\ApCleanse\obj\Release\net6.0\refint\ApCleanse.dll
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.pdb
+S:\Sof\ApCleanse\obj\Release\net6.0\ApCleanse.genruntimeconfig.cache
+S:\Sof\ApCleanse\obj\Release\net6.0\ref\ApCleanse.dll

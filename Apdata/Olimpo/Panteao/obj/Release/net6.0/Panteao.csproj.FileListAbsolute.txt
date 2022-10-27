@@ -1,0 +1,15 @@
+S:\Sof\Olimpo\Panteao\bin\Release\net6.0\appsettings.json
+S:\Sof\Olimpo\Panteao\bin\Release\net6.0\Panteao.deps.json
+S:\Sof\Olimpo\Panteao\bin\Release\net6.0\Panteao.runtimeconfig.json
+S:\Sof\Olimpo\Panteao\bin\Release\net6.0\Panteao.dll
+S:\Sof\Olimpo\Panteao\bin\Release\net6.0\Panteao.pdb
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.csproj.AssemblyReference.cache
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.GeneratedMSBuildEditorConfig.editorconfig
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.AssemblyInfoInputs.cache
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.AssemblyInfo.cs
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.csproj.CoreCompileInputs.cache
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.dll
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\refint\Panteao.dll
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.pdb
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\Panteao.genruntimeconfig.cache
+S:\Sof\Olimpo\Panteao\obj\Release\net6.0\ref\Panteao.dll

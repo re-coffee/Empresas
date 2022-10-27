@@ -1,0 +1,5 @@
+C:\Users\rcsilva\Desktop\appsettings.json
+C:\Users\rcsilva\Desktop\Cronos.pdb
+C:\Users\rcsilva\Desktop\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\rcsilva\Desktop\Panteao.pdb
+C:\Users\rcsilva\Desktop\Cronos.exe

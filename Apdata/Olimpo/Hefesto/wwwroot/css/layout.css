@@ -1,0 +1,74 @@
+﻿.menu {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(43, 43, 43, 0.1), rgba(60, 60, 60, 0.8));
+    white-space: nowrap;
+}
+
+    .menu a {
+        margin-left: 35px;
+        display: block;
+        color: rgba(255, 255, 255, 1);
+        height: 20px;
+    }
+
+        .menu a:hover {
+            color: rgba(200,200, 200, 1);
+            border-right: 4px solid white;
+        }
+
+
+.card {
+    height: 150px;
+    width: 100%;
+    vertical-align: top;
+}
+
+    .card div {
+        margin: 25px 0 0 130px;
+    }
+
+    .card b {
+        margin: 30px 0 0 0;
+    }
+
+.logo {
+    height: 130px;
+    margin: 0px 0px 5px 30px;
+    position: fixed;
+}
+
+.social {
+    margin: 0 0px 10px 0px;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    padding: 5px 0px 5px 0px;
+}
+
+    .social a {
+        font: bold 15px arial;
+        display: contents;
+    }
+
+.footer {
+    position: absolute;
+    bottom: 25px;
+    color: white;
+    font-size: 12px;
+    margin: 10px;
+    height: 50px;
+}
+
+    .footer img {
+        height: 40px;
+        margin-left: 70px;
+    }
+
+.principal {
+    margin-left: 240px;
+    background-color: transparent;
+}
