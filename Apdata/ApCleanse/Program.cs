@@ -2,7 +2,7 @@
 
 File.AppendAllText
 ($@"{diretorioAplicacao}\Log\Analitico_{DateTime.Now.ToString("yyyyMMdd")}.csv",
- $"Aplicação,Servidor,Registros excluídos,Espaço liberado(GB),Tempo de execução\n");
+ $"Aplicação;Servidor;Registros excluídos;Espaço liberado(GB);Tempo de execução;\n");
 
 foreach(var arg in args)
 {

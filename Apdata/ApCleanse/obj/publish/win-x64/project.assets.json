@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "S:\\Sof\\ApCleanse\\ApCleanse.csproj",
+      "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
       "projectName": "ApCleanse",
-      "projectPath": "S:\\Sof\\ApCleanse\\ApCleanse.csproj",
+      "projectPath": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
       "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-      "outputPath": "S:\\Sof\\ApCleanse\\obj\\publish\\win-x64\\",
+      "outputPath": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\obj\\publish\\win-x64\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",

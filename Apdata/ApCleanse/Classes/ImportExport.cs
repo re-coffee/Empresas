@@ -48,7 +48,8 @@
                            s.EndsWith(".tmp", StringComparison.OrdinalIgnoreCase) ||
                            s.EndsWith(".xml", StringComparison.OrdinalIgnoreCase) ||
                            s.EndsWith(".rtf", StringComparison.OrdinalIgnoreCase) ||
-                           s.EndsWith(".ini", StringComparison.OrdinalIgnoreCase))
+                           s.EndsWith(".ini", StringComparison.OrdinalIgnoreCase) ||
+                           s.EndsWith(".raf", StringComparison.OrdinalIgnoreCase))
                     .Where(x =>
                            File.GetLastWriteTime(x) < DateTime.Today.AddDays(diasAnteriores * -1))
                     .ToList()

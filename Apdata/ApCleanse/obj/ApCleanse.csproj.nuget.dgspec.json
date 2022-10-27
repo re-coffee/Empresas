@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Sof\\ApCleanse\\ApCleanse.csproj": {}
+    "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj": {}
   },
   "projects": {
-    "S:\\Sof\\ApCleanse\\ApCleanse.csproj": {
+    "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Sof\\ApCleanse\\ApCleanse.csproj",
+        "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
         "projectName": "ApCleanse",
-        "projectPath": "S:\\Sof\\ApCleanse\\ApCleanse.csproj",
+        "projectPath": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
         "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-        "outputPath": "S:\\Sof\\ApCleanse\\obj\\",
+        "outputPath": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",

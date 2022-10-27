@@ -75,7 +75,8 @@ namespace ApCleanse.Classes
                            s.EndsWith(".tmp", StringComparison.OrdinalIgnoreCase) ||
                            s.EndsWith(".xml", StringComparison.OrdinalIgnoreCase) ||
                            s.EndsWith(".rtf", StringComparison.OrdinalIgnoreCase) ||
-                           s.EndsWith(".ini", StringComparison.OrdinalIgnoreCase))
+                           s.EndsWith(".ini", StringComparison.OrdinalIgnoreCase) ||
+                           s.EndsWith(".raf", StringComparison.OrdinalIgnoreCase))
                     .Where(x =>
                            File.GetLastWriteTime(x) < DateTime.Today.AddDays(diasAnteriores * -1))
                     .ToList()
@@ -110,7 +111,7 @@ namespace ApCleanse.Classes
             }
             try
             {
-                Logs.Add($"{GetType().Name},{servidor},{ContadorRegistros},{Math.Round(ContadorGigabyte / 1000d / 1000d / 1000d, 2)},{Timer.Elapsed.ToString("hh\\:mm\\:ss\\.fff")}");
+                Logs.Add($"{GetType().Name};{servidor};{ContadorRegistros};{Math.Round(ContadorGigabyte / 1000d / 1000d / 1000d, 3).ToString().Replace(".", ",")};{Timer.Elapsed.ToString("hh\\:mm\\:ss\\.fff")};");
                 File.AppendAllLines
                     ($@"{CaminhoAplicacao}\Log\Analitico_{DataAtual}.csv",
                     Logs);

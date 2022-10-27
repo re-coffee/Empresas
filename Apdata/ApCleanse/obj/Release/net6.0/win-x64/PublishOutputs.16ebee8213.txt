@@ -1,0 +1,2 @@
+S:\Git\Empresas\Apdata\ApCleanse\Compiled\ApCleanse.pdb
+S:\Git\Empresas\Apdata\ApCleanse\Compiled\ApCleanse.exe
