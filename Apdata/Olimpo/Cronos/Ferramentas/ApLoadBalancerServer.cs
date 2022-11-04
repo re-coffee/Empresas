@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Cronos.Ferramentas
 {
-    internal class ApLoadBalancerServer
+    internal class ApLoadBalancerServer : Base
     {
+        internal override void PopularServicos(int idServidorAtual)
+        {
+            foreach (var servicoWindows in ServicosWindows)
+            {
+
+            }
+        }
     }
 }

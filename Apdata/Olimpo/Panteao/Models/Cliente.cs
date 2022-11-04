@@ -9,8 +9,8 @@ namespace Panteao
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
-        public int? IdContrato { get; set; } = 0;
-        public int? IdServidorBanco { get; set; } = 0;
+        public int? IdContrato { get; set; }
+        public int? IdServidorBanco { get; set; }
         public string? NomeInstancia { get; set; } = "";
         public string? Titulo { get; set; } = "";
         public string? Descricao { get; set; } = "";

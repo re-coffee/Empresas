@@ -5,7 +5,7 @@ namespace Panteao
     [Table("Relatorio", Schema = "adm")]
     public class Relatorio : Base
     {
-        public int? IdRole { get; set; } = 0;
+        public int? IdRole { get; set; }
         public string? View { get; set; } = "";
 
         [ForeignKey("IdRole")]

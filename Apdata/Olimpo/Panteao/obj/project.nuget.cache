@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rKqvIs8QIh67wICCdxT3tGn+bf9syisYg49bzDzUkTicxTC/vZgJ7brDiYMhd/14vJhf4qw7nlMr1qrtdbdMFA==",
+  "dgSpecHash": "5Bk4thrrv5f9e3OqvMuobwDmFn2VaQgaRPO1exiUyn/zTiqybQVv19fnZn343Eep3m/YBzUDXQlnbOyFwg2EoQ==",
   "success": true,
-  "projectFilePath": "S:\\Sof\\Olimpo\\Panteao\\Panteao.csproj",
+  "projectFilePath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rcsilva\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -54,7 +54,10 @@
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\rcsilva\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.8\\microsoft.netcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.8\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.8.nupkg.sha512",
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.8\\microsoft.aspnetcore.app.runtime.win-x64.6.0.8.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Sof\\Olimpo\\Cronos\\Cronos.csproj": {}
+    "S:\\Git\\Empresas\\Apdata\\Olimpo\\Cronos\\Cronos.csproj": {}
   },
   "projects": {
-    "S:\\Sof\\Olimpo\\Cronos\\Cronos.csproj": {
+    "S:\\Git\\Empresas\\Apdata\\Olimpo\\Cronos\\Cronos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Sof\\Olimpo\\Cronos\\Cronos.csproj",
+        "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Cronos\\Cronos.csproj",
         "projectName": "Cronos",
-        "projectPath": "S:\\Sof\\Olimpo\\Cronos\\Cronos.csproj",
+        "projectPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Cronos\\Cronos.csproj",
         "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-        "outputPath": "S:\\Sof\\Olimpo\\Cronos\\obj\\",
+        "outputPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Cronos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "S:\\Sof\\Olimpo\\Panteao\\Panteao.csproj": {
-                "projectPath": "S:\\Sof\\Olimpo\\Panteao\\Panteao.csproj"
+              "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj": {
+                "projectPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "S:\\Sof\\Olimpo\\Panteao\\Panteao.csproj": {
+    "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Sof\\Olimpo\\Panteao\\Panteao.csproj",
+        "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
         "projectName": "Panteao",
-        "projectPath": "S:\\Sof\\Olimpo\\Panteao\\Panteao.csproj",
+        "projectPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
         "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-        "outputPath": "S:\\Sof\\Olimpo\\Panteao\\obj\\",
+        "outputPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",

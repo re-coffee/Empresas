@@ -7,11 +7,11 @@ namespace Panteao
     [Index(nameof(IdCliente), nameof(IdServidor), nameof(Porta), IsUnique = true)]
     public class Servico : Base
     {
-        public int? IdCliente { get; set; } = 0;
-        public int? IdServidor { get; set; } = 0;
-        public int? IdServidorBanco { get; set; } = 0;
-        public int? IdArquivo { get; set; } = 0;
-        public int? IdTipoServico { get; set; } = 0;
+        public int? IdCliente { get; set; }
+        public int? IdServidor { get; set; }
+        public int? IdServidorBanco { get; set; }
+        public int? IdArquivo { get; set; }
+        public int? IdTipoServico { get; set; }
         public string? Caminho { get; set; } = "";
         public int? Porta { get; set; } = 0;
         public string? Build { get; set; } = "";

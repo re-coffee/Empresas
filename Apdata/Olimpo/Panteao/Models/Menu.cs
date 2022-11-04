@@ -5,7 +5,7 @@ namespace Panteao
     [Table("Menu", Schema = "adm")]
     public class Menu : Base
     {
-        public int? IdRole { get; set; } = 0;
+        public int? IdRole { get; set; }
         public string? Controller { get; set; } = "";
         public string? Action { get; set; } = "";
         [ForeignKey("IdRole")]

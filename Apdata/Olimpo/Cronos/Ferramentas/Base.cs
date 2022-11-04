@@ -6,7 +6,6 @@ namespace Cronos.Ferramentas
     internal class Base
     {
         public Base() { ExecutaProcesso(); }
-
         internal List<Servidor>? Servidores { get; set; } = new Context().Servidores?.Where(x => x.IdCategoria > 1).OrderBy(x => x.Id).ToList();
         internal List<Servico>? Servicos { get; set; } = new List<Servico>();
         internal List<ServiceController>? ServicosWindows { get; set; } = new List<ServiceController>();
@@ -21,7 +20,6 @@ namespace Cronos.Ferramentas
                     .Where(x => x.ServiceName.Contains(GetType().Name, StringComparison.OrdinalIgnoreCase)
                              && x.StartType != ServiceStartMode.Disabled)
                     .ToList();
-
                 if (ServicosWindows.Count != 0)
                     PopularServicos(servidor.Id);
             }
@@ -60,13 +58,9 @@ namespace Cronos.Ferramentas
                             servicoContext.Build = servico.Build;
                             servicoContext.DataAtualizacao = servico.DataAtualizacao;
                         }
-
                         ctx.SaveChanges();
-
                     }
                     catch { continue; }
-
-                    
                 }
                 Servicos.Clear();
             }            

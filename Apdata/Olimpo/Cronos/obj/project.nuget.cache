@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JwYgCbgTNU2koNHZ1KCz1q1/826bz6sCtDj7VM7VQ8YSir+cZm2bq+iHDEls3xrLwLPp5EsHODmI1g87Fz1cpQ==",
+  "dgSpecHash": "OxG5RpAJM3gZBaLvnPrrw8Cmdqq3aOxPu5X4Y+ADowC2Che6K/cVA2i6UIF9QgY78wBs7rlAKxFg3u+IxLZWaA==",
   "success": true,
-  "projectFilePath": "S:\\Sof\\Olimpo\\Cronos\\Cronos.csproj",
+  "projectFilePath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Cronos\\Cronos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
