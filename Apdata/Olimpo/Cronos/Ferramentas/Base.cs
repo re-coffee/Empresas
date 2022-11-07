@@ -10,6 +10,23 @@ namespace Cronos.Ferramentas
         internal List<Servico>? Servicos { get; set; } = new List<Servico>();
         internal List<ServiceController>? ServicosWindows { get; set; } = new List<ServiceController>();
 
+
+        /*Override*/
+        internal virtual Servico InstanciarClasse(Metodos metodos, int idServidorAtual) { throw new NotImplementedException(); }
+
+
+        /*Metodos*/
+        /*ExecutaProcesso(): instancia os servicos do windows e chama a funcao PopularServicos()
+          para cada servidor*/
+
+        /*PopularServicos(): para cada servico do windows da lista chama a funcao InstanciarClasse()
+          que sera sobrescrita pelas classes que herdam conforme o servico que se quer mapear
+          Apos isso chama a funcao AtualizarContexto()*/
+        
+        /*InstanciarClasse(): recebe o tipo ServiceController do windows e instancia o tipo Servico()*/
+
+        /*AtualizarContexto(): para cada item da lista de Servico() populada pelas funcoes anteriores,
+          testa e insere no banco utilizando o contexto*/
         internal void ExecutaProcesso()
         {
             foreach(var servidor in Servidores)
@@ -24,9 +41,23 @@ namespace Cronos.Ferramentas
                     PopularServicos(servidor.Id);
             }
         }
+        internal void PopularServicos(int idServidorAtual)
+        {
+            foreach (var servicoWindows in ServicosWindows)
+            {
+                var metodos = new Metodos(servicoWindows.MachineName, servicoWindows);
+                var srv = InstanciarClasse(metodos, idServidorAtual);
 
-        internal virtual void PopularServicos(int idServidorAtual) { }
+                if ((srv.Porta == 0 && srv.InstanciaBanco == "") ||
+                    (srv.IdCliente == null && srv.IdServidorBanco == null))
+                {
+                    continue;
+                }
 
+                Servicos.Add(srv);
+            }
+            AtualizarContexto();
+        }
         internal void AtualizarContexto()
         {
             using (var ctx = new Context())
@@ -65,5 +96,6 @@ namespace Cronos.Ferramentas
                 Servicos.Clear();
             }            
         }
+
     }
 }

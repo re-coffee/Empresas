@@ -7,6 +7,20 @@ namespace Panteao
     [Index(nameof(IdCliente), nameof(IdServidor), nameof(Porta), IsUnique = true)]
     public class Servico : Base
     {
+        public Servico() { }
+        public Servico(int? idCliente, int? idServidor, int? idServidorBanco, int? idArquivo, int? idTipoServico, string? caminho, int? porta, string? build, string? instanciaBanco)
+        {
+            IdCliente = idCliente;
+            IdServidor = idServidor;
+            IdServidorBanco = idServidorBanco;
+            IdArquivo = idArquivo;
+            IdTipoServico = idTipoServico;
+            Caminho = caminho;
+            Porta = porta;
+            Build = build;
+            InstanciaBanco = instanciaBanco;
+        }
+
         public int? IdCliente { get; set; }
         public int? IdServidor { get; set; }
         public int? IdServidorBanco { get; set; }
