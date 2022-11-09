@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vUqahUaTEHvUGvjVpJ3/D2DdoLmSXb3fmuVGYb/EktBhZZ07RQ/3N6ruHtXsla5WBwU4JbVIVSl44qDXzaIGYA==",
+  "success": true,
+  "projectFilePath": "S:\\Git\\Empresas\\Apdata\\ApMail\\ApMail.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512"
+  ],
+  "logs": []
+}

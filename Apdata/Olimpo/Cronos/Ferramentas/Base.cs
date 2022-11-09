@@ -45,7 +45,7 @@ namespace Cronos.Ferramentas
         {
             foreach (var servicoWindows in ServicosWindows)
             {
-                var metodos = new Metodos(servicoWindows.MachineName, servicoWindows);
+                var metodos = new Metodos(servicoWindows);
                 var srv = InstanciarClasse(metodos, idServidorAtual);
 
                 if ((srv.Porta == 0 && srv.InstanciaBanco == "") ||

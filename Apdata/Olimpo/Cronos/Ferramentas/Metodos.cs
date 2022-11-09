@@ -7,13 +7,11 @@ namespace Cronos.Ferramentas
 {
     internal class Metodos : Context
     {
-        public Metodos(string maquina, ServiceController servicoWindows)
+        public Metodos(ServiceController servicoWindows)
         {
-            Maquina = maquina;
             ServicoWindows = servicoWindows;
         }
         public Context ctx { get; set; } = new Context();
-        public string Maquina { get; set; }
         public ServiceController ServicoWindows { get; set; }
         public int IdServidorAtual { get; set; }
 
@@ -42,9 +40,9 @@ namespace Cronos.Ferramentas
                             .FirstOrDefault()?.Id ?? null;
         }
 
-        internal string? GetExe(string caminho)
+        internal string? GetExe(string imagePath)
         {
-            return caminho.Substring(0, caminho.IndexOf(".exe") + 4);
+            return imagePath.Substring(0, imagePath.IndexOf(".exe") + 4);
         }
 
         internal string? GetBuild(string caminhoExecutavel)
@@ -58,7 +56,7 @@ namespace Cronos.Ferramentas
         {
             return
                 RegistryKey
-                .OpenRemoteBaseKey(RegistryHive.LocalMachine, Maquina, RegistryView.Registry64)
+                .OpenRemoteBaseKey(RegistryHive.LocalMachine, ServicoWindows.MachineName, RegistryView.Registry64)
                 .OpenSubKey(caminho, true)
                 .GetValue(valor)
                 .ToString();

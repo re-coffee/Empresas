@@ -20,7 +20,7 @@ namespace Cronos.Ferramentas
 
             /*Variaveis para instancia*/
             var idServidorBanco = metodos.GetIdServidorBanco(servidorBanco);
-            var idTipoServico = metodos.GetIdTipoServico("ApServer");
+            var idTipoServico = metodos.GetIdTipoServico(GetType().Name);
             var caminho = metodos.GetExe(metodos.GetReg(regExe, "ImagePath"));
             var porta = int.Parse(metodos.GetReg(regPorta, "Server Port"));
             var build = metodos.GetBuild(caminho);

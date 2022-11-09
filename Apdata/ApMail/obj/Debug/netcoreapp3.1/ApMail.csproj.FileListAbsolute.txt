@@ -1,0 +1,14 @@
+S:\Git\Empresas\Apdata\ApMail\bin\Debug\netcoreapp3.1\ApMail.exe
+S:\Git\Empresas\Apdata\ApMail\bin\Debug\netcoreapp3.1\ApMail.deps.json
+S:\Git\Empresas\Apdata\ApMail\bin\Debug\netcoreapp3.1\ApMail.runtimeconfig.json
+S:\Git\Empresas\Apdata\ApMail\bin\Debug\netcoreapp3.1\ApMail.runtimeconfig.dev.json
+S:\Git\Empresas\Apdata\ApMail\bin\Debug\netcoreapp3.1\ApMail.dll
+S:\Git\Empresas\Apdata\ApMail\bin\Debug\netcoreapp3.1\ApMail.pdb
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.csproj.AssemblyReference.cache
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.GeneratedMSBuildEditorConfig.editorconfig
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.AssemblyInfoInputs.cache
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.AssemblyInfo.cs
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.csproj.CoreCompileInputs.cache
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.dll
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.pdb
+S:\Git\Empresas\Apdata\ApMail\obj\Debug\netcoreapp3.1\ApMail.genruntimeconfig.cache
