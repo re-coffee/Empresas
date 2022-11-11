@@ -6,6 +6,8 @@ namespace Cronos.Ferramentas
     {
         internal override Servico InstanciarClasse(Metodos metodos, int idServidorAtual)
         {
+
+
             /*Caminhos regedit*/
             var regApdata = $@"SOFTWARE\Apdata\{metodos.ServicoWindows.ServiceName}\";
             var regPorta = $@"{regApdata}Visible Applications Servers\Self\TCP_IP Settings";
