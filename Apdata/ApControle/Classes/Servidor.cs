@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ApDatabaseController.Classes
+namespace ApControle.Classes
 {
     [Table("Servidor")]
     internal class Servidor
@@ -27,7 +27,7 @@ namespace ApDatabaseController.Classes
                     {
                         while (reader.Read())
                         {
-                            listaBases.Add($"{reader["name"]};{reader["state"]}");
+                            listaBases.Add($"{reader["name"]};{reader["state"]};{reader["data"]}");
                         }
                     }
                     return listaBases;
@@ -40,44 +40,81 @@ namespace ApDatabaseController.Classes
         public List<Controle> Controles(Servidor servidor)
         {
             List<Controle> controles = new List<Controle>();
-            foreach(var item in ListaBases())
+            foreach (var item in ListaBases())
             {
 
-                    var controle = new Controle();
+                var controle = new Controle();
 
-                    controle.Database = $"{servidor.Instancia}:{item.Split(';')[0]}";
-                    controle.Ativo = item.Split(';')[1] == "1";
-                    try
+                controle.Database = $"{servidor.Instancia}:{item.Split(';')[0]}";
+                controle.Ativo = item.Split(';')[1] == "1";
+                controle.DataCriacao = DateTime.Parse(item.Split(';')[2].ToString());
+                try
+                {
+                    controle.IpServico = controle.PortaServico = "";
+                    if (controle.Ativo)
                     {
                         using (SqlConnection con = new SqlConnection(GetStringConexao(item.Split(';')[0])))
                         {
                             con.Open();
-                            using (SqlCommand getDatabase = new SqlCommand(GetIpPort(), con))
+                            using (SqlCommand getIpPort = new SqlCommand(GetIpPort(), con))
                             {
-                                using (SqlDataReader reader = getDatabase.ExecuteReader())
+                                try
                                 {
+                                    var reader = getIpPort.ExecuteReader();
                                     while (reader.Read())
                                     {
-                                        controle.IpServico =
-                                            new Contexto().Servidores
-                                            .Where(x =>
-                                                   x.Hostname.ToLower() ==
-                                                   reader["nome"].ToString().ToLower())
-                                                   .FirstOrDefault()?
-                                                   .Ip ?? "";
-                                        if (controle.IpServico != "")
+                                        var controleBanco = new Contexto().Servidores
+                                           .Where(x =>
+                                                  x.Hostname.ToLower() ==
+                                                  reader["nome"].ToString().ToLower())
+                                                  .FirstOrDefault()?
+                                                  .Ip ?? "";
+                                        if (controleBanco != "")
                                         {
+
+                                            controle.IpServico = controleBanco;
                                             controle.PortaServico = reader["porta"].ToString();
                                             break;
                                         }
                                     }
                                 }
+                                catch { }
+                                
+                            }
+                            con.Close();
+                            con.Open();
+                            using (SqlCommand getUltimoLogin = new SqlCommand(GetUltimoLogin(), con))
+                            {
+                                try
+                                {
+                                    var reader = getUltimoLogin.ExecuteReader();
+                                    while (reader.Read())
+                                    {
+                                        controle.UltimoLogin = (DateTime)reader["UltimoLogin"];
+                                    }
+                                }
+                                catch { }
+                            }
+                            con.Close();
+                            con.Open();
+                            using (SqlCommand getTamanhoBase = new SqlCommand(GetTamanhoBase(), con))
+                            {
+                                try
+                                {
+                                    var reader = getTamanhoBase.ExecuteReader();
+                                    while (reader.Read())
+                                    {
+                                        controle.TamanhoBase = reader["TamanhoBase"].ToString();
+                                    }
+                                }
+                                catch { }
                             }
                             con.Close();
                         }
                     }
-                    catch { controle.IpServico = controle.PortaServico = "Offline"; }
-                    finally { controles.Add(controle); }
+                }
+                catch { }
+                finally { controles.Add(controle); }
             }
             return controles;
         }
@@ -91,12 +128,32 @@ namespace ApDatabaseController.Classes
 
         public string GetDatabase()
         {
-            return "select name, case state when 6 then 0 else 1 end 'state' from sys.databases where name not in ('master','tempdb','model','msdb')";
+            return "select name, case state when 6 then 0 else 1 end 'state', create_date data from sys.databases where name not in ('master','tempdb','model','msdb')";
         }
 
         public string GetIpPort()
         {
-            return "IF object_id('InstanciasApServer', 'U') is not null SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta FROM InstanciasApServer WHERE ECV_DtdFimInstancia is NULL group by ECV_DssNomeMaquina, ECV_NuiPorta; ELSE SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta FROM t_InstanciasApServer WHERE ECV_DtdFimInstancia is NULL group by ECV_DssNomeMaquina, ECV_NuiPorta;";
+            return
+                @"IF object_id('InstanciasApServer', 'U') is not null
+                    SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta
+                    FROM InstanciasApServer WHERE ECV_DtdFimInstancia is NULL
+                    group by ECV_DssNomeMaquina, ECV_NuiPorta;
+                  ELSE
+                    SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta
+                    FROM t_InstanciasApServer WHERE ECV_DtdFimInstancia is NULL
+                    group by ECV_DssNomeMaquina, ECV_NuiPorta; ";
         }
+
+        public string GetUltimoLogin()
+        {
+            return
+                @"SELECT top 1 LOS_DtdDataHoraLogIn UltimoLogin from LOGS where LOS_DtdDataHoraLogIn is not null order by LOS_DtdDataHoraLogIn desc";
+        }
+        public string GetTamanhoBase()
+        {
+            return
+                @"SELECT cast(CAST(SUM(size) * 8. / 1024 AS DECIMAL(8,2)) as varchar) + ' MB' as TamanhoBase FROM sys.master_files WHERE database_id = DB_ID() GROUP BY database_id";
+        }
+
     }
 }

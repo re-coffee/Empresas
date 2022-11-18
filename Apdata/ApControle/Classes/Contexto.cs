@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace ApDatabaseController.Classes
+namespace ApControle.Classes
 {
     internal class Contexto : DbContext
     {
@@ -16,6 +16,8 @@ namespace ApDatabaseController.Classes
         }
         public DbSet<Controle>? Controles { get; set; }
         public DbSet<Servidor>? Servidores { get; set; }
+        public DbSet<Email>? Emails { get; set; }
+        public DbSet<Configuracao>? Configuracoes { get; set; }
 
         public static string StringConexao()
         {

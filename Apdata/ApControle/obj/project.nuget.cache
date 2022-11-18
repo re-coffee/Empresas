@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MT5+CqNe6X42err8CzT4St/2e/fhhCkO8XINBW4TcNXx5ehpTq+bp8wlQ1MnnFpz5qg3QK6Cq1vHpbJIeSxTjA==",
+  "dgSpecHash": "/FpgTSTUBPo1U8MGEwNtGswvFDKa/1rGmrZ0utTDwtjy3E7x3JY/vn7dvA5OWfPOCRc1ztsHBRzsI+kzrmnviw==",
   "success": true,
-  "projectFilePath": "S:\\Git\\Empresas\\Apdata\\ApDatabaseController\\ApControle.csproj",
+  "projectFilePath": "S:\\Git\\Empresas\\Apdata\\ApControle\\ApControle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rcsilva\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
