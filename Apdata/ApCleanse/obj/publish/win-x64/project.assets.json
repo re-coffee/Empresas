@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
+      "projectUniqueName": "S:\\Sof\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
       "projectName": "ApCleanse",
-      "projectPath": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
+      "projectPath": "S:\\Sof\\Empresas\\Apdata\\ApCleanse\\ApCleanse.csproj",
       "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-      "outputPath": "S:\\Git\\Empresas\\Apdata\\ApCleanse\\obj\\publish\\win-x64\\",
+      "outputPath": "S:\\Sof\\Empresas\\Apdata\\ApCleanse\\obj\\publish\\win-x64\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,22 +52,23 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.8, 6.0.8]"
+            "version": "[6.0.11, 6.0.11]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.8, 6.0.8]"
+            "version": "[6.0.11, 6.0.11]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.8, 6.0.8]"
+            "version": "[6.0.11, 6.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -75,7 +76,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

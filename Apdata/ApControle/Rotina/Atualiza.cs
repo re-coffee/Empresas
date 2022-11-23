@@ -10,7 +10,7 @@
         public List<Servidor>? Servidores { get; set; } = new Contexto().Servidores.ToList();
         public void InserirControle()
         {
-            foreach (var servidor in Servidores)
+            foreach (var servidor in Servidores.Where(x => x.Instancia.Length > 0).ToList())
             {
                 foreach (var controle in servidor.Controles(servidor))
                 {

@@ -30,10 +30,9 @@ namespace ApControle.Classes
                             listaBases.Add($"{reader["name"]};{reader["state"]};{reader["data"]}");
                         }
                     }
-                    return listaBases;
-
                 }
                 con.Close();
+                return listaBases;
             }
         }
 
@@ -50,7 +49,7 @@ namespace ApControle.Classes
                 controle.DataCriacao = DateTime.Parse(item.Split(';')[2].ToString());
                 try
                 {
-                    controle.IpServico = controle.PortaServico = "";
+                    controle.IpServico = controle.PortaServico = "--";
                     if (controle.Ativo)
                     {
                         using (SqlConnection con = new SqlConnection(GetStringConexao(item.Split(';')[0])))
@@ -79,7 +78,6 @@ namespace ApControle.Classes
                                     }
                                 }
                                 catch { }
-                                
                             }
                             con.Close();
                             con.Open();
@@ -134,14 +132,16 @@ namespace ApControle.Classes
         public string GetIpPort()
         {
             return
-                @"IF object_id('InstanciasApServer', 'U') is not null
+                @"IF DB_NAME not like '%[_]MT'
                     SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta
-                    FROM InstanciasApServer WHERE ECV_DtdFimInstancia is NULL
-                    group by ECV_DssNomeMaquina, ECV_NuiPorta;
-                  ELSE
+                      FROM InstanciasApServer
+                     WHERE ECV_DtdFimInstancia is NULL
+                     group by ECV_DssNomeMaquina, ECV_NuiPorta;
+                ELSE
                     SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta
-                    FROM t_InstanciasApServer WHERE ECV_DtdFimInstancia is NULL
-                    group by ECV_DssNomeMaquina, ECV_NuiPorta; ";
+                      FROM t_InstanciasApServer
+                     WHERE ECV_DtdFimInstancia is NULL
+                     group by ECV_DssNomeMaquina, ECV_NuiPorta;";
         }
 
         public string GetUltimoLogin()

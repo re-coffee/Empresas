@@ -10,7 +10,7 @@ namespace ApControle.Classes
             .Controles
             .Include(x => x.Emails)
             .Where(x => x.DataFim.HasValue &&
-                        x.DataFim.Value > DateTime.Today &&
+                        x.DataFim.Value.Date > DateTime.Today.Date &&
                         x.Destinatarios.Length > 0 &&
                         x.Ativo == true)
             .ToList();

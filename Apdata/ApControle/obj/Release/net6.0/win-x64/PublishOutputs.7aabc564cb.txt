@@ -1,0 +1,3 @@
+S:\Sof\Empresas\Apdata\ApControle\Compiled\ApControle.pdb
+S:\Sof\Empresas\Apdata\ApControle\Compiled\Microsoft.Data.SqlClient.SNI.dll
+S:\Sof\Empresas\Apdata\ApControle\Compiled\ApControle.exe

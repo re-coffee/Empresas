@@ -79,6 +79,8 @@ namespace ApControle.Classes
             return variavel.Replace("#BASEDADOS#", ControleAcesso.Database, StringComparison.OrdinalIgnoreCase)
                            .Replace("#IPSERVICO#", ControleAcesso.IpServico, StringComparison.OrdinalIgnoreCase)
                            .Replace("#PORTASERVICO#", ControleAcesso.PortaServico, StringComparison.OrdinalIgnoreCase)
+                           .Replace("#CHAMADO#", ControleAcesso.Chamado, StringComparison.OrdinalIgnoreCase)
+                           .Replace("#ULTIMOLOGIN#", ControleAcesso.UltimoLogin?.ToString("dd/MM/yyyy"), StringComparison.OrdinalIgnoreCase)
                            .Replace("#DATACRIACAO#", ControleAcesso.DataCriacao?.ToString("dd/MM/yyyy"), StringComparison.OrdinalIgnoreCase)
                            .Replace("#DATAFIM#", ControleAcesso.DataFim?.ToString("dd/MM/yyyy"), StringComparison.OrdinalIgnoreCase)
                            .Replace("#DIASRESTANTES#", GetDiasRestantes().ToString(), StringComparison.OrdinalIgnoreCase); ;
@@ -92,7 +94,7 @@ namespace ApControle.Classes
             SmtpServer.EnableSsl = GetSsl();
             email.Subject = GetAssunto();
             email.Body = GetCorpo();
-            //email.CC.Add(email.From);
+            email.CC.Add(email.From);
             email.IsBodyHtml = true;
             foreach (var destinatario in DestinatariosArray.Where(x => !string.IsNullOrEmpty(x)))
             {

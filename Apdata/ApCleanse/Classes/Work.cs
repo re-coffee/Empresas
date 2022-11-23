@@ -9,7 +9,7 @@
                 Resetar();
                 Timer.Start();
                 Mapear(servidor);
-                CarregarArquivos(3);
+                CarregarArquivos(2);
                 Timer.Stop();
                 Logar(servidor);
             }
