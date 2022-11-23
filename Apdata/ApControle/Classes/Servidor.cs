@@ -132,16 +132,14 @@ namespace ApControle.Classes
         public string GetIpPort()
         {
             return
-                @"IF DB_NAME not like '%[_]MT'
+                @"IF object_id('InstanciasApServer', 'U') is not null
                     SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta
-                      FROM InstanciasApServer
-                     WHERE ECV_DtdFimInstancia is NULL
-                     group by ECV_DssNomeMaquina, ECV_NuiPorta;
-                ELSE
+                    FROM InstanciasApServer WHERE ECV_DtdFimInstancia is NULL
+                    group by ECV_DssNomeMaquina, ECV_NuiPorta;
+                  ELSE
                     SELECT ECV_DssNomeMaquina nome, ECV_NuiPorta porta
-                      FROM t_InstanciasApServer
-                     WHERE ECV_DtdFimInstancia is NULL
-                     group by ECV_DssNomeMaquina, ECV_NuiPorta;";
+                    FROM t_InstanciasApServer WHERE ECV_DtdFimInstancia is NULL
+                    group by ECV_DssNomeMaquina, ECV_NuiPorta;";
         }
 
         public string GetUltimoLogin()
