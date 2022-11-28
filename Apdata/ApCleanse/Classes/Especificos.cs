@@ -11,7 +11,7 @@
                 if (Directory.Exists(especifico))
                     Diretorios.Add(especifico);
             }
-            CarregarArquivos();
+            CarregarArquivos(DiasAnteriores);
             Timer.Stop();
             Logar("Especifico");
         }

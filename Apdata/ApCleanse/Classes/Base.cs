@@ -9,6 +9,7 @@ namespace ApCleanse.Classes
             CarregarParametros();
             CarregarDiretorios();
         }
+        public int DiasAnteriores { get; set; } = 30;
         internal string? CaminhoAplicacao { get; set; } = AppDomain.CurrentDomain.BaseDirectory.Replace('/', '\\');
         internal string? DataAtual { get; set; } = DateTime.Now.ToString("yyyyMMdd");
         internal List<string>? Diretorios { get; set; } = new List<string>();
@@ -31,6 +32,12 @@ namespace ApCleanse.Classes
         internal void CarregarParametros()
         {
             var linhas = File.ReadAllLines($@"{CaminhoAplicacao}Parametros.txt");
+            var parametro = linhas.Where(x => x.ToLower().Contains(GetType().Name.ToLower())).FirstOrDefault();
+            try
+            {
+                DiasAnteriores = int.Parse(parametro.Split('=')[1].Trim());
+            }
+            catch { }
 
             Clientes =
                 linhas.SkipWhile(s => s != "<clientes>").Skip(1).TakeWhile(s => s != "</clientes>").ToList();
@@ -52,7 +59,7 @@ namespace ApCleanse.Classes
                 Resetar();
                 Timer.Start();
                 Mapear(servidor);
-                CarregarArquivos();
+                CarregarArquivos(DiasAnteriores);
                 Timer.Stop();
                 Logar(servidor);
             }
@@ -60,7 +67,7 @@ namespace ApCleanse.Classes
 
         internal virtual void Mapear(string servidor) { }
 
-        internal virtual void CarregarArquivos(int diasAnteriores = 30)
+        internal virtual void CarregarArquivos(int diasAnteriores)
         {
             foreach (var diretorio in Diretorios)
             {
@@ -78,7 +85,7 @@ namespace ApCleanse.Classes
                            s.EndsWith(".ini", StringComparison.OrdinalIgnoreCase) ||
                            s.EndsWith(".raf", StringComparison.OrdinalIgnoreCase))
                     .Where(x =>
-                           File.GetLastWriteTime(x) < DateTime.Today.AddDays(diasAnteriores * -1))
+                           File.GetLastWriteTime(x).Date < DateTime.Today.AddDays(diasAnteriores * -1))
                     .ToList()
                     .ForEach(x =>
                            Arquivos.Add(x));

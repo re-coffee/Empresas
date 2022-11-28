@@ -15,7 +15,7 @@ namespace ApCleanse.Classes
                 Resetar();
                 Timer.Start();
                 Mapear(servidor);
-                CarregarArquivos(1);
+                CarregarArquivos(DiasAnteriores);
                 Timer.Stop();
                 Logar(servidor);
             }
@@ -55,7 +55,7 @@ namespace ApCleanse.Classes
                            s.EndsWith(".ini", StringComparison.OrdinalIgnoreCase) ||
                            s.EndsWith(".raf", StringComparison.OrdinalIgnoreCase))
                     .Where(x =>
-                           File.GetLastWriteTime(x) < DateTime.Today.AddDays(diasAnteriores * -1))
+                           File.GetLastWriteTime(x).Date < DateTime.Today.AddDays(diasAnteriores * -1))
                     .ToList()
                     .ForEach(x =>
                            Arquivos.Add(x));

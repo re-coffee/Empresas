@@ -9,7 +9,7 @@
                 Resetar();
                 Timer.Start();
                 Mapear(servidor);
-                CarregarArquivos(5);
+                CarregarArquivos(DiasAnteriores);
                 Timer.Stop();
                 Logar(servidor);
             }
@@ -51,7 +51,7 @@
                            s.EndsWith(".ini", StringComparison.OrdinalIgnoreCase) ||
                            s.EndsWith(".raf", StringComparison.OrdinalIgnoreCase))
                     .Where(x =>
-                           File.GetLastWriteTime(x) < DateTime.Today.AddDays(diasAnteriores * -1))
+                           File.GetLastWriteTime(x).Date < DateTime.Today.AddDays(diasAnteriores * -1))
                     .ToList()
                     .ForEach(x =>
                            Arquivos.Add(x));
