@@ -1,0 +1,12 @@
+Smtp = SomeSMTPServerHere.com.br
+Porta = #PORT#
+Remetente = SOMEEMAIL@DOMAIN.COM
+Destinatario = SOMEEMAIL@SOMEDOMAIN.COM;ANOTHEREMAIL@DOMAIN.COM;
+Arquivos = C:\SOME\DIRECTORY\HERE\
+cliente= Loren
+Aviso=[Example of disclaimer]
+
+optionals:
+//Usuario = SMTPUser
+//Senha = SMTPPass
+//Ssl = Case no ssl - number 0

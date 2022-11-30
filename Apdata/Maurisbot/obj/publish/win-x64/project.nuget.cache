@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "05QhxyIfLNh0kDqnOEDYKWto3zKSG/lgMiQ0LpKcbPLb03yA3C0cbZTjA0Nb3CVimjnYtnTq9JvEPjZh4lP83g==",
+  "dgSpecHash": "v9O2MymAQ283zKnbjpbbB91jL2iL80Z5M0WxsZdl7O0pHhabxswJBm5VE0jC1nKXBi6H5mftYCRiQ416IOGGpw==",
   "success": true,
-  "projectFilePath": "C:\\Srv\\MaurisBot\\MaurisBot\\MaurisBot.csproj",
+  "projectFilePath": "S:\\Sof\\Empresas\\Apdata\\Maurisbot\\MaurisBot.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.19\\microsoft.netcore.app.runtime.win-x64.3.1.19.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.19\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.19.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.19\\microsoft.aspnetcore.app.runtime.win-x64.3.1.19.nupkg.sha512"
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.31\\microsoft.netcore.app.runtime.win-x64.3.1.31.nupkg.sha512",
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.31\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.31.nupkg.sha512",
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.31\\microsoft.aspnetcore.app.runtime.win-x64.3.1.31.nupkg.sha512"
   ],
   "logs": []
 }

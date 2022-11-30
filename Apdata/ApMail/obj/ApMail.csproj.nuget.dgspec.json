@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Git\\Empresas\\Apdata\\ApMail\\ApMail.csproj": {}
+    "S:\\Sof\\Empresas\\Apdata\\ApMail\\ApMail.csproj": {}
   },
   "projects": {
-    "S:\\Git\\Empresas\\Apdata\\ApMail\\ApMail.csproj": {
+    "S:\\Sof\\Empresas\\Apdata\\ApMail\\ApMail.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\ApMail\\ApMail.csproj",
+        "projectUniqueName": "S:\\Sof\\Empresas\\Apdata\\ApMail\\ApMail.csproj",
         "projectName": "ApMail",
-        "projectPath": "S:\\Git\\Empresas\\Apdata\\ApMail\\ApMail.csproj",
+        "projectPath": "S:\\Sof\\Empresas\\Apdata\\ApMail\\ApMail.csproj",
         "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-        "outputPath": "S:\\Git\\Empresas\\Apdata\\ApMail\\obj\\",
+        "outputPath": "S:\\Sof\\Empresas\\Apdata\\ApMail\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,22 +45,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.28, 3.1.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

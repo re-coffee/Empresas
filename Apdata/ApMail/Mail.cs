@@ -15,6 +15,8 @@ namespace Apdata
         }
 
         public string DiretorioAplicacao { get; set; } = Directory.GetCurrentDirectory().Replace('/', '\\');
+        public string Cliente { get; set; }
+        public string Aviso { get; set; } = "";
         public string ServidorSmtp { get; set; }
         public string PortaSmtp { get; set; }
         public string UsuarioSmtp { get; set; }
@@ -48,9 +50,12 @@ namespace Apdata
             }
             try { DiretorioArquivos = dic["Arquivos"]; }
             catch { DiretorioArquivos = ""; }
-
+            Cliente = dic["cliente"];
             Remetente = dic["remetente"];
             Destinatarios = dic["destinatario"].Split(';').Where(x => !string.IsNullOrEmpty(x)).ToList();
+
+            if(!string.IsNullOrEmpty(dic["aviso"]))
+                Aviso = $"Aviso: {dic["aviso"]}";
 
             if (Directory.Exists(DiretorioArquivos))
                 Arquivos = Directory.GetFiles(DiretorioArquivos, "*.txt", SearchOption.TopDirectoryOnly).ToList();
@@ -78,9 +83,9 @@ namespace Apdata
             SmtpServer.Port = int.Parse(PortaSmtp);
             SmtpServer.Credentials = new System.Net.NetworkCredential(UsuarioSmtp, SenhaSmtp);
             SmtpServer.EnableSsl = Ssl;
-
-            mail.Subject = $"[Apuração mensal {DateTime.Now.ToString("MM/yyyy")}]";
-            mail.Body = $"Email automático - {DateTime.Now.ToString("'Enviado em 'dd/MM/yyyy' às 'HH:mm:ss")}";
+            mail.IsBodyHtml= true;
+            mail.Subject = $"[{Cliente} - Apuração mensal {DateTime.Now.ToString("MM/yyyy")}]";
+            mail.Body = $"<div style='font-family: Segoe UI;'>* Email automático *<br><br><i>{Aviso}</i><div>";
             SmtpServer.Send(mail);
         }
     }

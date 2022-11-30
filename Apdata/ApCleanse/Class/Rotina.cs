@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace ApCleanse.Class
 {
@@ -20,14 +19,16 @@ namespace ApCleanse.Class
             foreach (var linha in LinhasParametros.Where(x => x.StartsWith("~>")).Select(s => s.Replace("~>", "").Trim())) Servidores.Add(linha);
             foreach (var linha in LinhasParametros.Where(x => x.StartsWith(".>")).Select(x => x.Replace(".>", "").Trim())) Excecoes.Add(linha);
 
-            Extensoes =
-                LinhasParametros
-                .Where(x => x.StartsWith("Extensões", StringComparison.OrdinalIgnoreCase))
-                .FirstOrDefault()
-                .Split(":")[1]
-                .Split("||")
-                .Select(x => x.Trim())
-                .ToList();
+            try
+            {
+                Titulo =
+                    LinhasParametros.Where(x =>
+                                           x.StartsWith("Titulo", StringComparison.OrdinalIgnoreCase))
+                                    .FirstOrDefault()
+                                    .Split(":")[1]
+                                    .Trim();
+            }
+            catch { }
 
             Diretorio =
                 LinhasParametros
@@ -42,16 +43,33 @@ namespace ApCleanse.Class
                 .FirstOrDefault()
                 .Split(":")[1]
                 .Trim();
+
+            Extensoes =
+                LinhasParametros
+                .Where(x => x.StartsWith("Extensoes", StringComparison.OrdinalIgnoreCase))
+                .FirstOrDefault()
+                .Split(":")[1]
+                .Split("||")
+                .Select(x => x.Trim())
+                .ToList();
+
+            ArquivoLog = $"{DiretorioApp}log\\{Titulo}_{DateTime.Now.Date.ToString("yyyyMMdd")}.csv";
+            Directory.CreateDirectory($"{DiretorioApp}log\\");
+
+            if (!File.Exists(ArquivoLog))
+            {
+                File.AppendAllText(ArquivoLog, "Servidor;Clientes;Diretórios analisados;Arquivos excluídos;Espaço liberado (GB);Tempo de execução;Data;\n");
+            }
+                
         }
 
         private void ExecutarRotina()
         {
-            ResetarVariaveis();
             Regex rx = new Regex("(i?)C[0-9]{3}_.+");
             foreach (var servidor in Servidores)
             {
                 var dir = Diretorio
-                    .Replace("#SERVIDOR", servidor, StringComparison.OrdinalIgnoreCase)
+                    .Replace("#SERVIDOR#", servidor, StringComparison.OrdinalIgnoreCase)
                     .Replace("#DISCO#", Disco, StringComparison.OrdinalIgnoreCase);
 
                 Clientes =
@@ -71,13 +89,14 @@ namespace ApCleanse.Class
                                  .Trim())
                                  .ToList());
                 }
-                Clientes.Clear();
-                Excluir();
+                Excluir(servidor);
             }
         }
-        private void Excluir()
+        private void Excluir(string servidor)
         {
-            foreach(var diretorio in Diretorios)
+            Timer.Start();
+            ContadorDiretorios = 0;
+            foreach (var diretorio in Diretorios)
             {
                 var config = diretorio.Split("||");
                 var dir = config[0].Trim();
@@ -85,24 +104,33 @@ namespace ApCleanse.Class
                 var pesquisa = SearchOption.TopDirectoryOnly;
 
                 if (config.Length == 3) pesquisa = SearchOption.AllDirectories;
-                if (Directory.Exists(dir)) Mapear(dir, dia, pesquisa);
+                if (Directory.Exists(dir))
+                {
+                    Mapear(dir, dia, pesquisa);
+                    ContadorDiretorios++;
+                }
+                    
             }
 
             foreach (var arquivo in Arquivos)
             {
-                Console.WriteLine
-                    ($"{File.GetLastWriteTime(arquivo).ToString("dd/MM/yyyy hh:mm")} - " +
-                    $"{arquivo}");
+                try {
+                    var tamanho = new FileInfo(arquivo).Length;
+                    File.Delete(arquivo);
+                    ContadorGigabytes += tamanho;
+                    ContadorRegistros++; }
+                catch { }
             }
+            Timer.Stop();
 
-            Arquivos.Clear();
+            Logar(servidor);
         }
 
         private void Mapear(string diretorio, int diasAnteriores, SearchOption pesquisa)
         {
 
             Directory.GetFiles(diretorio, "*.*", pesquisa)
-                    .Where(x => Extensoes.Any(e => x.Contains(e, StringComparison.OrdinalIgnoreCase)))
+                    .Where(x => Extensoes.Any(e => x.EndsWith(e, StringComparison.OrdinalIgnoreCase)))
                     .Where(x => !Excecoes.Any(e => x.Contains(e, StringComparison.OrdinalIgnoreCase)))
                     .Where(x =>
                            File.GetLastWriteTime(x).Date < DateTime.Today.AddDays(diasAnteriores * -1))
@@ -110,13 +138,25 @@ namespace ApCleanse.Class
                     .ForEach(x => Arquivos.Add(x));
         }
 
-        private void ResetarVariaveis()
+        private void Logar(string servidor)
         {
+            if(ContadorRegistros > 0)
+                File.AppendAllText(ArquivoLog,
+                    $"{servidor};" +
+                    $"{Clientes.Count()};" +
+                    $"{ContadorDiretorios};" +
+                    $"{ContadorRegistros};" +
+                    $"{Math.Round(ContadorGigabytes / 1000d / 1000d / 1000d, 3).ToString().Replace(".", ",")};" +
+                    $"{Timer.Elapsed.ToString("hh\\:mm\\:ss")};" +
+                    $"{DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")};\n");
+
+            Clientes.Clear();
+            Diretorios.Clear();
             Arquivos.Clear();
-            Logs.Clear();
             Timer.Reset();
-            ParcialGigabytes = 0;
-            ParcialRegistros = 0;
+
+            ContadorGigabytes = 0;
+            ContadorRegistros = 0;
         }
     }
 }

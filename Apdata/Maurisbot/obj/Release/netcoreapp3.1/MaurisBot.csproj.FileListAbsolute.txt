@@ -12,3 +12,17 @@ C:\Srv\MaurisBot\MaurisBot\obj\Release\netcoreapp3.1\MaurisBot.csproj.CoreCompil
 C:\Srv\MaurisBot\MaurisBot\obj\Release\netcoreapp3.1\MaurisBot.dll
 C:\Srv\MaurisBot\MaurisBot\obj\Release\netcoreapp3.1\MaurisBot.pdb
 C:\Srv\MaurisBot\MaurisBot\obj\Release\netcoreapp3.1\MaurisBot.genruntimeconfig.cache
+S:\Sof\Empresas\Apdata\Maurisbot\bin\Release\netcoreapp3.1\MaurisBot.exe
+S:\Sof\Empresas\Apdata\Maurisbot\bin\Release\netcoreapp3.1\MaurisBot.deps.json
+S:\Sof\Empresas\Apdata\Maurisbot\bin\Release\netcoreapp3.1\MaurisBot.runtimeconfig.json
+S:\Sof\Empresas\Apdata\Maurisbot\bin\Release\netcoreapp3.1\MaurisBot.runtimeconfig.dev.json
+S:\Sof\Empresas\Apdata\Maurisbot\bin\Release\netcoreapp3.1\MaurisBot.dll
+S:\Sof\Empresas\Apdata\Maurisbot\bin\Release\netcoreapp3.1\MaurisBot.pdb
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.csproj.AssemblyReference.cache
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.GeneratedMSBuildEditorConfig.editorconfig
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.AssemblyInfoInputs.cache
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.AssemblyInfo.cs
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.csproj.CoreCompileInputs.cache
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.dll
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.pdb
+S:\Sof\Empresas\Apdata\Maurisbot\obj\Release\netcoreapp3.1\MaurisBot.genruntimeconfig.cache
