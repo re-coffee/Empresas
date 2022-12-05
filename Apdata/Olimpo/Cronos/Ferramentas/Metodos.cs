@@ -47,8 +47,8 @@ namespace Cronos.Ferramentas
 
         internal string? GetBuild(string caminhoExecutavel)
         {
-            return 
-                FileVersionInfo.GetVersionInfo(caminhoExecutavel) + 
+            return
+                FileVersionInfo.GetVersionInfo(caminhoExecutavel) +
                 $" [{File.GetLastWriteTime(caminhoExecutavel).ToString("dd-MM-yyyy HH:mm")}]";
         }
 
@@ -60,6 +60,20 @@ namespace Cronos.Ferramentas
                 .OpenSubKey(caminho, true)
                 .GetValue(valor)
                 .ToString();
+        }
+
+        internal string GetArquivo(string caminhoPasta, string extensao)
+        {
+            var arquivoFormatado = "";
+            var caminhoArquivo = Directory.GetFiles(caminhoPasta).Where(x =>
+                                              x.StartsWith("ApLoadBalancerServer_", StringComparison.OrdinalIgnoreCase) &&
+                                              x.EndsWith(extensao, StringComparison.OrdinalIgnoreCase))
+                                       .FirstOrDefault();
+
+            foreach (var linha in File.ReadAllLines(caminhoArquivo))
+                arquivoFormatado += $"{linha}<br>";
+
+            return arquivoFormatado;
         }
     }
 }

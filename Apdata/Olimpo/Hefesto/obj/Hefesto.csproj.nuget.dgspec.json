@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Git\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj": {}
+    "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj": {}
   },
   "projects": {
-    "S:\\Git\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj": {
+    "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj",
+        "projectUniqueName": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj",
         "projectName": "Hefesto",
-        "projectPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj",
+        "projectPath": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\Hefesto.csproj",
         "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-        "outputPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Hefesto\\obj\\",
+        "outputPath": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj": {
-                "projectPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj"
+              "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj": {
+                "projectPath": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj"
               }
             }
           }
@@ -65,7 +65,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -77,18 +78,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj": {
+    "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
+        "projectUniqueName": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
         "projectName": "Panteao",
-        "projectPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
+        "projectPath": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
         "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-        "outputPath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Panteao\\obj\\",
+        "outputPath": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Panteao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -142,7 +143,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -151,7 +153,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

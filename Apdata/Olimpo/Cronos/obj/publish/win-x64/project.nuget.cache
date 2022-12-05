@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sf6cKP44vaULAJebPzd6E2AF4JfpiIzGyPiKIY1Efvhrq1M4QGozn5274paXZk6hrwRepTXGBkFOOhYECqcaHw==",
+  "dgSpecHash": "BC+am5UHfrrTnPfwNT6JefqVoMBT8McKw6/P1eFHX2OqzGMiawTQuekIqr7Mv6bb1AQJST7gkXaY6afLvvfZoA==",
   "success": true,
-  "projectFilePath": "S:\\Git\\Empresas\\Apdata\\Olimpo\\Cronos\\Cronos.csproj",
+  "projectFilePath": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Cronos\\Cronos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
@@ -54,9 +54,9 @@
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.8\\microsoft.netcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.8\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.8\\microsoft.aspnetcore.app.runtime.win-x64.6.0.8.nupkg.sha512"
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.11\\microsoft.netcore.app.runtime.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.11.nupkg.sha512",
+    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.11\\microsoft.aspnetcore.app.runtime.win-x64.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

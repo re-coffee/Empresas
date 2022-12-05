@@ -88,6 +88,7 @@ namespace ApControle.Classes
                                     var reader = getUltimoLogin.ExecuteReader();
                                     while (reader.Read())
                                     {
+                                        controle.UsuarioUltimoLogin = reader["UsuarioUltimoLogin"].ToString();
                                         controle.UltimoLogin = (DateTime)reader["UltimoLogin"];
                                     }
                                 }
@@ -145,7 +146,7 @@ namespace ApControle.Classes
         public string GetUltimoLogin()
         {
             return
-                @"SELECT top 1 LOS_DtdDataHoraLogIn UltimoLogin from LOGS where LOS_DtdDataHoraLogIn is not null order by LOS_DtdDataHoraLogIn desc";
+                @"SELECT top 1 LOS_CdsUsuario UsuarioUltimoLogin, LOS_DtdDataHoraLogIn UltimoLogin from LOGS where LOS_DtdDataHoraLogIn is not null and LOS_CdsUsuario not in ('ap_uptime','iti','VirtualUser') order by LOS_DtdDataHoraLogIn desc";
         }
         public string GetTamanhoBase()
         {

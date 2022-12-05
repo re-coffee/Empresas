@@ -20,6 +20,19 @@ namespace Panteao
             Build = build;
             InstanciaBanco = instanciaBanco;
         }
+        public Servico(int? idCliente, int? idServidor, int? idServidorBanco, int? idArquivo, int? idTipoServico, string? caminho, int? porta, string? build, string? instanciaBanco, Arquivo arquivo)
+        {
+            IdCliente = idCliente;
+            IdServidor = idServidor;
+            IdServidorBanco = idServidorBanco;
+            IdArquivo = idArquivo;
+            IdTipoServico = idTipoServico;
+            Caminho = caminho;
+            Porta = porta;
+            Build = build;
+            InstanciaBanco = instanciaBanco;
+            Arquivo = arquivo;
+        }
 
         public int? IdCliente { get; set; }
         public int? IdServidor { get; set; }

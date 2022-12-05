@@ -1,4 +1,6 @@
-﻿foreach (var arg in args)
+﻿using ApControle.Classes;
+
+foreach (var arg in args)
 {
     try
     {
@@ -7,3 +9,5 @@
     }
     catch { continue; }
 }
+
+new Atualiza();

@@ -12,6 +12,7 @@ namespace ApControle.Classes
             .Where(x => x.DataFim.HasValue &&
                         x.DataFim.Value.Date > DateTime.Today.Date &&
                         x.Destinatarios.Length > 0 &&
+                        x.Destinatarios != "--" &&
                         x.Ativo == true)
             .ToList();
         public void DispararLista()

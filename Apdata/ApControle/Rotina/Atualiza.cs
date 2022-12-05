@@ -27,6 +27,7 @@
                         }
                         else
                         {
+                            controleContexto.UsuarioUltimoLogin = controle.UsuarioUltimoLogin;
                             controleContexto.TamanhoBase = controle.TamanhoBase;
                             controleContexto.UltimoLogin = controle.UltimoLogin;
                             controleContexto.Ativo = controle.Ativo;
@@ -35,7 +36,6 @@
                     }
                 }
             }
-                
         }
     }
 }

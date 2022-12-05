@@ -2,3 +2,4 @@
 
 new Cliente();
 new ApServer();
+new ApLoadBalancerServer();

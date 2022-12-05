@@ -80,10 +80,11 @@ namespace ApControle.Classes
                            .Replace("#IPSERVICO#", ControleAcesso.IpServico, StringComparison.OrdinalIgnoreCase)
                            .Replace("#PORTASERVICO#", ControleAcesso.PortaServico, StringComparison.OrdinalIgnoreCase)
                            .Replace("#CHAMADO#", ControleAcesso.Chamado, StringComparison.OrdinalIgnoreCase)
-                           .Replace("#ULTIMOLOGIN#", ControleAcesso.UltimoLogin?.ToString("dd/MM/yyyy"), StringComparison.OrdinalIgnoreCase)
+                           .Replace("#USUARIOULTIMOLOGIN#", ControleAcesso.UsuarioUltimoLogin, StringComparison.OrdinalIgnoreCase)
+                           .Replace("#ULTIMOLOGIN#", ControleAcesso.UltimoLogin?.ToString("dd/MM/yyyy 'às' HH:mm"), StringComparison.OrdinalIgnoreCase)
                            .Replace("#DATACRIACAO#", ControleAcesso.DataCriacao?.ToString("dd/MM/yyyy"), StringComparison.OrdinalIgnoreCase)
                            .Replace("#DATAFIM#", ControleAcesso.DataFim?.ToString("dd/MM/yyyy"), StringComparison.OrdinalIgnoreCase)
-                           .Replace("#DIASRESTANTES#", GetDiasRestantes().ToString(), StringComparison.OrdinalIgnoreCase); ;
+                           .Replace("#DIASRESTANTES#", GetDiasRestantes().ToString(), StringComparison.OrdinalIgnoreCase);
     }
 
         public void Disparar()

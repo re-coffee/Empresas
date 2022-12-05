@@ -50,9 +50,7 @@ namespace Cronos.Ferramentas
 
                 if ((srv.Porta == 0 && srv.InstanciaBanco == "") ||
                     (srv.IdCliente == null && srv.IdServidorBanco == null))
-                {
                     continue;
-                }
 
                 Servicos.Add(srv);
             }
@@ -80,9 +78,7 @@ namespace Cronos.Ferramentas
                         var registroExiste = servicoContext?.Id ?? 0;
 
                         if (registroExiste == 0)
-                        {
                             ctx.Servicos.Add(servico);
-                        }
                         else
                         {
                             servicoContext.Caminho = servico.Caminho;

@@ -40,39 +40,54 @@ namespace ApControle.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnOrder(0);
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<bool>("Ativo")
-                        .HasColumnType("bit");
+                        .HasColumnType("bit")
+                        .HasColumnOrder(9);
 
                     b.Property<string>("Chamado")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnOrder(5);
 
                     b.Property<DateTime?>("DataCriacao")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnOrder(10);
 
                     b.Property<DateTime?>("DataFim")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnOrder(11);
 
                     b.Property<string>("Database")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnOrder(1);
 
                     b.Property<string>("Destinatarios")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnOrder(6);
 
                     b.Property<string>("IpServico")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnOrder(3);
 
                     b.Property<string>("PortaServico")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnOrder(4);
 
                     b.Property<string>("TamanhoBase")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnOrder(2);
 
                     b.Property<DateTime?>("UltimoLogin")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnOrder(8);
+
+                    b.Property<string>("UsuarioUltimoLogin")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnOrder(7);
 
                     b.HasKey("Id");
 

@@ -1,0 +1,305 @@
+{
+  "Files": [
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hefesto.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Hefesto.bundle.scp.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\css\\colors.css",
+      "PackagePath": "staticwebassets\\css\\colors.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\css\\datatable.css",
+      "PackagePath": "staticwebassets\\css\\datatable.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\css\\pages.css",
+      "PackagePath": "staticwebassets\\css\\pages.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\css\\stars.css",
+      "PackagePath": "staticwebassets\\css\\stars.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\images\\logo-footer.png",
+      "PackagePath": "staticwebassets\\images\\logo-footer.png"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\images\\robo.png",
+      "PackagePath": "staticwebassets\\images\\robo.png"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\js\\datatable.js",
+      "PackagePath": "staticwebassets\\js\\datatable.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Hefesto\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Hefesto.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Hefesto.props",
+      "PackagePath": "build\\Hefesto.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Hefesto.props",
+      "PackagePath": "buildMultiTargeting\\Hefesto.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Hefesto.props",
+      "PackagePath": "buildTransitive\\Hefesto.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

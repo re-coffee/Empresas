@@ -1,6 +1,4 @@
-﻿using Microsoft.Win32;
-using Panteao;
-using System.Diagnostics;
+﻿using Panteao;
 
 namespace Cronos.Ferramentas
 {
@@ -23,6 +21,12 @@ namespace Cronos.Ferramentas
             var idTipoServico = metodos.GetIdTipoServico(GetType().Name);
             var caminho = metodos.GetExe(metodos.GetReg(regExe, "ImagePath"));
             var porta = int.Parse(metodos.GetReg(regPorta, "Server Port"));
+
+            Console.WriteLine(GetType().Name);
+            Console.WriteLine("Regedit exe  : " + regExe);
+            Console.WriteLine("Caminho atual: " + caminho);
+            Console.WriteLine();
+
             var build = metodos.GetBuild(caminho);
             var instanciaBanco = stringConexaoBanco.Split(':')[1];
             var idCliente = metodos.GetIdCliente(instanciaBanco);

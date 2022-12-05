@@ -1,0 +1,5 @@
+S:\Sof\Empresas\Apdata\Olimpo\Cronos\Compiled\appsettings.json
+S:\Sof\Empresas\Apdata\Olimpo\Cronos\Compiled\Cronos.pdb
+S:\Sof\Empresas\Apdata\Olimpo\Cronos\Compiled\Microsoft.Data.SqlClient.SNI.dll
+S:\Sof\Empresas\Apdata\Olimpo\Cronos\Compiled\Panteao.pdb
+S:\Sof\Empresas\Apdata\Olimpo\Cronos\Compiled\Cronos.exe
