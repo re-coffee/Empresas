@@ -1,0 +1,3 @@
+S:\Sof\Empresas\Apdata\ApBuild\ApBuild\Compiled\ApBuild.pdb
+S:\Sof\Empresas\Apdata\ApBuild\ApBuild\Compiled\sni.dll
+S:\Sof\Empresas\Apdata\ApBuild\ApBuild\Compiled\ApBuild.exe

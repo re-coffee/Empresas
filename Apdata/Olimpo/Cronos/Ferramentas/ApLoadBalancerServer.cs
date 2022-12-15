@@ -13,21 +13,18 @@ namespace Cronos.Ferramentas
             /*Variaveis para instancia*/
             var idTipoServico = metodos.GetIdTipoServico(GetType().Name);
             var caminho = metodos.GetExe(metodos.GetReg(regExe, "ImagePath"));
-            Console.WriteLine(GetType().Name);
-            Console.WriteLine("Regedit exe  : " + regExe);
-            Console.WriteLine("Caminho atual: " + caminho);
-            Console.WriteLine();
-            Console.ReadLine();
+            var caminhoServidor = metodos.GetCaminhoServidor(caminho, idServidorAtual);
+
 
             var build = metodos.GetBuild(caminho);
             Regex rxInstancia = new Regex("(?i)(?<=D:\\\\)(.*)(?=\\\\Server)(?-i)");
-            var instancia = rxInstancia.Matches(caminho).FirstOrDefault().Value;
+            var instancia = rxInstancia.Matches(caminhoServidor).FirstOrDefault().Value;
             var idCliente = metodos.GetIdCliente(instancia);
 
             /*Incluindo arquivo*/
             Arquivo arquivo = new Arquivo();
             arquivo.Ini =
-                metodos.GetArquivo(caminho.Split(GetType().Name)[0], ".ini");
+                metodos.GetArquivo(caminhoServidor.Split(GetType().Name)[0], ".ini", GetType().Name);
             Regex rxPorta = new Regex("(?i)(?<=Port=)(.*)(?=<br>)(?-i)");
 
             var porta = 0;
@@ -44,7 +41,7 @@ namespace Cronos.Ferramentas
                     idServidorBanco: null,
                     idArquivo: null,
                     idTipoServico: idTipoServico,
-                    caminho: caminho,
+                    caminho: caminhoServidor,
                     porta: porta,
                     build: build,
                     instanciaBanco: null,

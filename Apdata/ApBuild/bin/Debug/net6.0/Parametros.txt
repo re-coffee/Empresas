@@ -1,0 +1,5 @@
+Saida      = S:\Sof\Empresas\Apdata\ApBuild\ApBuild\bin\Debug\net6.0\Tabela.html
+Css        = S:\Sof\Empresas\Apdata\ApBuild\ApBuild\bin\Debug\net6.0\style.CSS
+Query      = S:\Sof\Empresas\Apdata\ApBuild\ApBuild\bin\Debug\net6.0\Query.txt
+Excecoes   = tempdb; master; _MT; model; msdb;
+Servidores = 192.168.10.230\SQL2019;

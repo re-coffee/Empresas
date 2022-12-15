@@ -1,5 +1,5 @@
-set /P Atualizacao=Descreva a atualizacao:
+@set /P Atualizacao=What are you going to deliver? 
 git add .
 git commit -m "%Atualizacao%"
 git push
-timeout 50
+@pause

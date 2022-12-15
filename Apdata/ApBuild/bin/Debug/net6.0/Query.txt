@@ -1,0 +1,18 @@
+IF ( (SELECT Count(*) contagem
+      FROM   (SELECT DISTINCT ecv_nusbuildapserver build
+              FROM   instanciasapserver
+              WHERE  ecv_dtdfiminstancia IS NULL
+              GROUP  BY ecv_nusbuildapserver) contagem) = 1)
+SELECT
+	 ECV_DssNomeMaquina Servidor
+	,ECV_DssNomeInstancia Cliente
+	,ECV_NuiPorta Porta
+	,ECV_NusBuildApServer Build
+	,case
+		when   ECV_DssNomeInstancia like '%_DEC_%' then 'Decurso'
+		when   ECV_OplApServerPrincipal = 1 then 'Principal'
+		else   'Comum'
+		end as 'ApServer'
+FROM InstanciasApServer WITH(NOLOCK)
+WHERE ECV_DtdFimInstancia is NULL
+ORDER BY ECV_DtdInicioInstancia DESC, ECV_DssNomeMaquina;

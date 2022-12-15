@@ -42,38 +42,58 @@ namespace Cronos.Ferramentas
 
         internal string? GetExe(string imagePath)
         {
-            return imagePath.Substring(0, imagePath.IndexOf(".exe") + 4);
+            return imagePath.Substring(0, imagePath.IndexOf(".exe", StringComparison.OrdinalIgnoreCase) + 4);
         }
 
         internal string? GetBuild(string caminhoExecutavel)
         {
-            return
-                FileVersionInfo.GetVersionInfo(caminhoExecutavel) +
-                $" [{File.GetLastWriteTime(caminhoExecutavel).ToString("dd-MM-yyyy HH:mm")}]";
+            var build = "";
+            try
+            {
+                build =
+                    FileVersionInfo.GetVersionInfo(caminhoExecutavel).FileVersion +
+                    $" [{File.GetLastWriteTime(caminhoExecutavel).ToString("dd-MM-yyyy HH:mm")}]";
+            }
+            catch { }
+
+            return build;
         }
 
         internal string GetReg(string caminho, string valor)
         {
-            return
-                RegistryKey
+            var reg = "";
+            try
+            {
+                reg = RegistryKey
                 .OpenRemoteBaseKey(RegistryHive.LocalMachine, ServicoWindows.MachineName, RegistryView.Registry64)
                 .OpenSubKey(caminho, true)
                 .GetValue(valor)
                 .ToString();
+            }
+            catch { }
+            return reg;
+                
         }
 
-        internal string GetArquivo(string caminhoPasta, string extensao)
+        internal string GetArquivo(string caminhoPasta, string extensao, string tipo)
         {
             var arquivoFormatado = "";
             var caminhoArquivo = Directory.GetFiles(caminhoPasta).Where(x =>
-                                              x.StartsWith("ApLoadBalancerServer_", StringComparison.OrdinalIgnoreCase) &&
+                                              x.StartsWith(tipo, StringComparison.OrdinalIgnoreCase) &&
                                               x.EndsWith(extensao, StringComparison.OrdinalIgnoreCase))
                                        .FirstOrDefault();
-
             foreach (var linha in File.ReadAllLines(caminhoArquivo))
                 arquivoFormatado += $"{linha}<br>";
 
             return arquivoFormatado;
+        }
+
+        internal string GetCaminhoServidor(string caminho, int idServidor)
+        {
+            var ip = ctx.Servidores.Where(x => x.Id == idServidor)
+                .FirstOrDefault().Ip;
+            return 
+                $"\\\\{ip}\\{caminho.Replace(":", "$")}";
         }
     }
 }

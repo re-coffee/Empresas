@@ -6,32 +6,31 @@ namespace Cronos.Ferramentas
     {
         internal override Servico InstanciarClasse(Metodos metodos, int idServidorAtual)
         {
-            /*Caminhos regedit*/
-            var regApdata = $@"SOFTWARE\Apdata\{metodos.ServicoWindows.ServiceName}\";
-            var regPorta = $@"{regApdata}Visible Applications Servers\Self\TCP_IP Settings";
-            var regDatabase = $@"{regApdata}DataBase";
-            var regExe = $@"SYSTEM\CurrentControlSet\Services\{metodos.ServicoWindows.ServiceName}";
+            //Caminhos regedit
+            var regPrincipal = $@"SOFTWARE\Apdata\{metodos.ServicoWindows.ServiceName}\";
+            var regDatabase = $@"{regPrincipal}DataBase";
+            var regPorta = $@"{regPrincipal}Visible Applications Servers\Self\TCP_IP Settings";
+            var regImagePath = $@"SYSTEM\CurrentControlSet\Services\{metodos.ServicoWindows.ServiceName}";
 
-            /*Database*/
-            var stringConexaoBanco = metodos.GetReg(regDatabase, "ServerName");
-            var servidorBanco = stringConexaoBanco.Split(':')[0].Split(',')[0];
-
-            /*Variaveis para instancia*/
-            var idServidorBanco = metodos.GetIdServidorBanco(servidorBanco);
+            //Retornos regedit
+            var instanciaBanco = metodos.GetReg(regDatabase, "ServerName");
+            var idCliente = 0;
+            try
+            {
+                idCliente = (int)metodos.GetIdCliente(instanciaBanco.Split(":")[1]);
+            }
+            catch { }
+            
+            var idServidorBanco = metodos.GetIdServidorBanco(instanciaBanco.Split(':')[0].Split(',')[0]);
+            var imagePath = metodos.GetReg(regImagePath, "ImagePath");
+            var executavel = metodos.GetExe(imagePath);
             var idTipoServico = metodos.GetIdTipoServico(GetType().Name);
-            var caminho = metodos.GetExe(metodos.GetReg(regExe, "ImagePath"));
+            var caminho = metodos.GetCaminhoServidor(executavel, idServidorAtual);
             var porta = int.Parse(metodos.GetReg(regPorta, "Server Port"));
-
-            Console.WriteLine(GetType().Name);
-            Console.WriteLine("Regedit exe  : " + regExe);
-            Console.WriteLine("Caminho atual: " + caminho);
-            Console.WriteLine();
-
             var build = metodos.GetBuild(caminho);
-            var instanciaBanco = stringConexaoBanco.Split(':')[1];
-            var idCliente = metodos.GetIdCliente(instanciaBanco);
 
-            return 
+
+            return
                 new Servico
                     (idCliente: idCliente,
                     idServidor: idServidorAtual,

@@ -45,14 +45,17 @@ namespace Cronos.Ferramentas
         {
             foreach (var servicoWindows in ServicosWindows)
             {
-                var metodos = new Metodos(servicoWindows);
-                var srv = InstanciarClasse(metodos, idServidorAtual);
-
-                if ((srv.Porta == 0 && srv.InstanciaBanco == "") ||
+                try
+                {
+                    var metodos = new Metodos(servicoWindows);
+                    var srv = InstanciarClasse(metodos, idServidorAtual);
+                    if ((srv.Porta == 0 && srv.InstanciaBanco == "") ||
                     (srv.IdCliente == null && srv.IdServidorBanco == null))
-                    continue;
+                        continue;
 
-                Servicos.Add(srv);
+                    Servicos.Add(srv);
+                }
+                catch { continue; }
             }
             AtualizarContexto();
         }
@@ -64,6 +67,7 @@ namespace Cronos.Ferramentas
                 {
                     try
                     {
+
                         var servicoContext = ctx.Servicos
                             .Where(x =>
                                         x.IdCliente == servico.IdCliente &&
@@ -78,7 +82,9 @@ namespace Cronos.Ferramentas
                         var registroExiste = servicoContext?.Id ?? 0;
 
                         if (registroExiste == 0)
+                        {
                             ctx.Servicos.Add(servico);
+                        }
                         else
                         {
                             servicoContext.Caminho = servico.Caminho;
