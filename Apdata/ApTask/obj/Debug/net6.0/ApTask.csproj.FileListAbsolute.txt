@@ -1,0 +1,15 @@
+S:\Sof\Empresas\Apdata\ApTask\bin\Debug\net6.0\ApTask.exe
+S:\Sof\Empresas\Apdata\ApTask\bin\Debug\net6.0\ApTask.deps.json
+S:\Sof\Empresas\Apdata\ApTask\bin\Debug\net6.0\ApTask.runtimeconfig.json
+S:\Sof\Empresas\Apdata\ApTask\bin\Debug\net6.0\ApTask.dll
+S:\Sof\Empresas\Apdata\ApTask\bin\Debug\net6.0\ApTask.pdb
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.csproj.AssemblyReference.cache
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.GeneratedMSBuildEditorConfig.editorconfig
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.AssemblyInfoInputs.cache
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.AssemblyInfo.cs
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.csproj.CoreCompileInputs.cache
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.dll
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\refint\ApTask.dll
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.pdb
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ApTask.genruntimeconfig.cache
+S:\Sof\Empresas\Apdata\ApTask\obj\Debug\net6.0\ref\ApTask.dll
