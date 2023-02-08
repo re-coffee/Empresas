@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿new ApTask.Update();
+new ApTask.Show();
+new ApTask.Rerun();
+new ApTask.Force();

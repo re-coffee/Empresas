@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild\\ApBuild.csproj": {}
+    "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild.csproj": {}
   },
   "projects": {
-    "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild\\ApBuild.csproj": {
+    "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild\\ApBuild.csproj",
+        "projectUniqueName": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild.csproj",
         "projectName": "ApBuild",
-        "projectPath": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild\\ApBuild.csproj",
+        "projectPath": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild.csproj",
         "packagesPath": "C:\\Users\\rcsilva\\.nuget\\packages\\",
-        "outputPath": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild\\obj\\",
+        "outputPath": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rcsilva\\AppData\\Roaming\\NuGet\\NuGet.Config",

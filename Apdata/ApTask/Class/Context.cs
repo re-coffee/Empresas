@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace ApTask
 {
-    internal class Context : DbContext
+    public class Context : DbContext
     {
         public Context() { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -16,6 +16,7 @@ namespace ApTask
         }
         public DbSet<Task> Tasks { get; set; }
         public DbSet<Configuration> Configurations { get; set; }
+        public DbSet<Log> Logs { get; set; }
 
 
         public static string ConnectionString()

@@ -3,7 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ApTask
 {
-    internal partial class Configuration
+    [Table("Configuration")]
+    public class Configuration
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

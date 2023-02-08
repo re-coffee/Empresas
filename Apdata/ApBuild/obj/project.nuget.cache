@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jc/v0SxRiV+INM8CQ5Adqx/pvMVGrXXbp8IsaQsaUj7XsNnfYOi9lhkUeu+jWqW0Y+pvdfvxMl9zOU5jTZFNCw==",
+  "dgSpecHash": "8DTCjcDcP087Mjc6OK9hdC3PuiODtWqpYxnhwSl0HvVZBFXvsmdGY1Ym6VWzqgAsv/5HkFJvhzTdToFOPejerg==",
   "success": true,
-  "projectFilePath": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild\\ApBuild.csproj",
+  "projectFilePath": "S:\\Sof\\Empresas\\Apdata\\ApBuild\\ApBuild.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
