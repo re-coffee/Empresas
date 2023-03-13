@@ -18,9 +18,9 @@ namespace ApBuild.Classes
 
         public void PopulaListaInstancias()
         {
-            foreach (var servidor in Arquivo.ServidoresBancos.Where(x => !Arquivo.Excecoes.Any(e=> x.Contains(e, StringComparison.OrdinalIgnoreCase))))
+            foreach (var servidor in Arquivo.ServidoresBancos.Where(x => !Arquivo.Excecoes.Any(e => x.Contains(e, StringComparison.OrdinalIgnoreCase))))
             {
-                using (var con = new SqlConnection($"Data Source={servidor};Trusted_Connection=True;"))
+                using (var con = new SqlConnection($"Data Source={servidor};Trusted_Connection=True;Connect Timeout=500;"))
                 {
                     try
                     {
@@ -31,7 +31,7 @@ namespace ApBuild.Classes
                             {
                                 while (dr.Read())
                                 {
-                                    var instancia = $"Server={servidor};Database={dr[0]};Trusted_Connection=True;";
+                                    var instancia = $"Server={servidor};Database={dr[0]};Trusted_Connection=True;Connect Timeout=500";
                                     //var instancia = $"Server={servidor};Database={dr[0]};User Id=apdata;Password=apdata;";
                                     ListaInstancias.Add(instancia);
                                 }
@@ -49,33 +49,28 @@ namespace ApBuild.Classes
                 using (var con = new SqlConnection(instancia))
                 {
                     con.Open();
-                    try
+                    using (SqlCommand cmd = new SqlCommand(Arquivo.Query, con))
                     {
-                        using (SqlCommand cmd = new SqlCommand(Arquivo.Query, con))
+                        using (IDataReader dr = cmd.ExecuteReader())
                         {
-                            using (IDataReader dr = cmd.ExecuteReader())
+                            var campos = "";
+                            var descompasso = "";
+                            while (dr.Read())
                             {
-                                var campos = "";
-                                var descompasso = "";
-                                while (dr.Read())
+                                descompasso += "\n\t<tr>";
+                                campos = "\t<tr>";
+                                for (int i = 0; i < dr.FieldCount; i++)
                                 {
-                                    descompasso += "\n\t<tr>";
-                                    campos = "\t<tr>";
-                                    for (int i = 0; i < dr.FieldCount; i++)
-                                    {
-                                        campos += $"\n\t\t<th>{dr.GetName(i)}</th>";
-                                        descompasso += $"\n\t\t<td>{dr[i]}</td>";
-                                    }
-                                    descompasso += "\n\t</tr>";
-                                    campos += "\n\t</tr>";
-                                    if (Campos.Length == 0) Campos = campos;
+                                    campos += $"\n\t\t<th>{dr.GetName(i)}</th>";
+                                    descompasso += $"\n\t\t<td>{dr[i]}</td>";
                                 }
-                                if (descompasso.Length != 0) ListaDescompassos.Add(descompasso);
+                                descompasso += "\n\t</tr>";
+                                campos += "\n\t</tr>";
+                                if (Campos.Length == 0) Campos = campos;
                             }
+                            if (descompasso.Length != 0) ListaDescompassos.Add(descompasso);
                         }
                     }
-                    catch
-                    { continue; }
                 }
             }
         }
@@ -84,7 +79,7 @@ namespace ApBuild.Classes
             var query = "Select name from sys.databases where [state] = 0 ";
             foreach (var excecao in Arquivo.Excecoes)
             {
-                query += $"and name not like '%{excecao}%' ";
+                query += $"and name not like '{excecao}' ";
             }
             query += ";";
             return query;

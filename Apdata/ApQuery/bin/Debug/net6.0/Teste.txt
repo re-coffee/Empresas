@@ -1,0 +1,10 @@
+Server     = localhost
+Instance   = Server=#Server#\DEVITI;Database=#Database#;Trusted_Connection=True;TrustServerCertificate=True;
+Query      = C:\Users\rcsilva\Desktop\Teste\query.txt
+Split      = 1
+Css        = .\style.css
+Id         = Table
+Output     = C:\Users\rcsilva\Desktop\Teste\asdf.html
+Database   = select 'ApControle' name;
+Complement = C:\Users\rcsilva\Desktop\Teste\complemento.html
+724767 - maurisbrabo

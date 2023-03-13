@@ -56,10 +56,7 @@ namespace ApCleanse.Class
             ArquivoLog = $"{DiretorioApp}log\\{Titulo}_{DateTime.Now.Date.ToString("yyyyMMdd")}.csv";
             Directory.CreateDirectory($"{DiretorioApp}log\\");
 
-            if (!File.Exists(ArquivoLog))
-            {
-                File.AppendAllText(ArquivoLog, "Servidor;Clientes;Diretórios analisados;Arquivos excluídos;Espaço liberado (GB);Tempo de execução;Data;\n");
-            }
+            
                 
         }
 
@@ -140,7 +137,10 @@ namespace ApCleanse.Class
 
         private void Logar(string servidor)
         {
-            if(ContadorRegistros > 0)
+            if (!File.Exists(ArquivoLog) && ContadorRegistros > 0)
+                File.AppendAllText(ArquivoLog, "Servidor;Clientes;Diretórios analisados;Arquivos excluídos;Espaço liberado (GB);Tempo de execução;Data;\n");
+
+            if (ContadorRegistros > 0)
                 File.AppendAllText(ArquivoLog,
                     $"{servidor};" +
                     $"{Clientes.Count()};" +

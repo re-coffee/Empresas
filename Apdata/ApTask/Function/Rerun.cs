@@ -10,7 +10,8 @@ namespace ApTask
         {
             foreach(var task in TaskList
                                     .Where(x => x.Rerun == true &&
-                                                x.Attempts < int.Parse(Cfgs["Attempt"])))
+                                                x.Attempts < int.Parse(Cfgs["Attempt"]) &&
+                                                (x.NextRunTime - DateTime.Now)?.TotalMinutes > int.Parse(Cfgs["NextRun"])))
             {
                 using (var process = new Process())
                 {
@@ -25,8 +26,9 @@ namespace ApTask
                     catch { result = false; }
                     
                     new Log(
-                        taskName:$"{task.TaskName} [{task.HostName}]",
-                        method:"Rerun.Go()",
+                        taskName: task.TaskName,
+                        lastRunTime: task.LastRunTime,
+                        method: "Rerun.Go()",
                         description: $"Execução de uma nova instância do Scheduler que retornou erro [Status: {task.Status}, Last Result: {task.LastResult}, Attempts: {task.Attempts}, Comando: {process.StartInfo.Arguments}]",
                         result: result);
                 }

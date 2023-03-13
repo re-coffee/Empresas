@@ -1,6 +1,3 @@
 S:\Sof\Empresas\Apdata\ApTask\Compiled\ApTask.pdb
 S:\Sof\Empresas\Apdata\ApTask\Compiled\Microsoft.Data.SqlClient.SNI.dll
-S:\Sof\Empresas\Apdata\ApTask\Compiled\PowerShell.Core.Instrumentation.dll
-S:\Sof\Empresas\Apdata\ApTask\Compiled\pwrshplugin.dll
-S:\Sof\Empresas\Apdata\ApTask\Compiled\pwrshplugin.pdb
 S:\Sof\Empresas\Apdata\ApTask\Compiled\ApTask.exe

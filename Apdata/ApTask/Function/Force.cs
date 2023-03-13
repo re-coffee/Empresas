@@ -27,7 +27,8 @@ namespace ApTask
                     catch { result = false; }
 
                     new Log(
-                        taskName: $"{task.TaskName} [{task.HostName}]",
+                        taskName: task.TaskName,
+                        lastRunTime: task.LastRunTime,
                         method: "Force.Go()",
                         description: $"Execução do comando de Force e nova execução da Task [Status: {task.Status}, Last Result: {task.LastResult}, Comando: {process.StartInfo.Arguments}]",
                         result: result);

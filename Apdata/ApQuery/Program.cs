@@ -1,0 +1,1 @@
+﻿new ApQuery.Class.Action(args[0]);
