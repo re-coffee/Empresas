@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Y9XsS3CAr06eIQbgjm5IylIfrLEJSoNbXph2Sc3gZsVv4cDWu7a8qPvXQutIIdxqznw80TN2uCX4mvSxSuuBxQ==",
+  "dgSpecHash": "UxZEIAKMgc908LQ4p0A5huogcEeCDNwaZzDiE2D8v7g5aaXPJcVg1bXz2Q+qyqB9PDg8kYe76wviGClh46yeGw==",
   "success": true,
   "projectFilePath": "S:\\Sof\\Empresas\\Apdata\\Olimpo\\Panteao\\Panteao.csproj",
   "expectedPackageFiles": [
@@ -54,10 +54,7 @@
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\rcsilva\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.11\\microsoft.netcore.app.runtime.win-x64.6.0.11.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.11\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.11.nupkg.sha512",
-    "C:\\Users\\rcsilva\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.11\\microsoft.aspnetcore.app.runtime.win-x64.6.0.11.nupkg.sha512"
+    "C:\\Users\\rcsilva\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

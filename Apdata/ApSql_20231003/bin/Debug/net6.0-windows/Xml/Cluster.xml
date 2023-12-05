@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCluster xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cluster>
+    <Key>a</Key>
+    <ClusterList>
+      <Cluster>asdf</Cluster>
+      <Cluster>asdfs</Cluster>
+    </ClusterList>
+  </Cluster>
+  <Cluster>
+    <Key>b</Key>
+    <ClusterList>
+      <Cluster>yuio</Cluster>
+      <Cluster>tyui</Cluster>
+    </ClusterList>
+  </Cluster>
+</ArrayOfCluster>

@@ -1,0 +1,3 @@
+C:\Users\rcsilva\Desktop\Desc\ApSql.pdb
+C:\Users\rcsilva\Desktop\Desc\sni.dll
+C:\Users\rcsilva\Desktop\Desc\ApSql.exe

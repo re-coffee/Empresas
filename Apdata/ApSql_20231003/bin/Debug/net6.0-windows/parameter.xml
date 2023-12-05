@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConnectionString />
+  <SelectDatabase />
+  <DatabaseList>
+    <string>a</string>
+    <string>b</string>
+    <string>c</string>
+    <string>d</string>
+  </DatabaseList>
+</Parameter>

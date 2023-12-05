@@ -46,31 +46,41 @@ namespace ApBuild.Classes
         {
             foreach (var instancia in ListaInstancias)
             {
-                using (var con = new SqlConnection(instancia))
+                try
                 {
-                    con.Open();
-                    using (SqlCommand cmd = new SqlCommand(Arquivo.Query, con))
+                    using (var con = new SqlConnection(instancia))
                     {
-                        using (IDataReader dr = cmd.ExecuteReader())
+                        con.Open();
+                        using (SqlCommand cmd = new SqlCommand(Arquivo.Query, con))
                         {
-                            var campos = "";
-                            var descompasso = "";
-                            while (dr.Read())
+                            using (IDataReader dr = cmd.ExecuteReader())
                             {
-                                descompasso += "\n\t<tr>";
-                                campos = "\t<tr>";
-                                for (int i = 0; i < dr.FieldCount; i++)
+                                var campos = "";
+                                var descompasso = "";
+                                while (dr.Read())
                                 {
-                                    campos += $"\n\t\t<th>{dr.GetName(i)}</th>";
-                                    descompasso += $"\n\t\t<td>{dr[i]}</td>";
+                                    descompasso += "\n\t<tr>";
+                                    campos = "\t<tr>";
+                                    for (int i = 0; i < dr.FieldCount; i++)
+                                    {
+                                        campos += $"\n\t\t<th>{dr.GetName(i)}</th>";
+                                        descompasso += $"\n\t\t<td>{dr[i]}</td>";
+                                    }
+                                    descompasso += "\n\t</tr>";
+                                    campos += "\n\t</tr>";
+                                    if (Campos.Length == 0) Campos = campos;
                                 }
-                                descompasso += "\n\t</tr>";
-                                campos += "\n\t</tr>";
-                                if (Campos.Length == 0) Campos = campos;
+                                if (descompasso.Length != 0) ListaDescompassos.Add(descompasso);
                             }
-                            if (descompasso.Length != 0) ListaDescompassos.Add(descompasso);
                         }
                     }
+                }
+                catch(SqlException err)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"> Instancia: {instancia}");
+                    Console.WriteLine($"> Error    : {err.Message}");
+                    Console.WriteLine();
                 }
             }
         }

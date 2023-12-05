@@ -1,0 +1,11 @@
+C:\Users\rcsilva\Desktop\Desc\ApSql.exe
+C:\Users\rcsilva\Desktop\Desc\ApSql.dll
+C:\Users\rcsilva\Desktop\Desc\ApSql.deps.json
+C:\Users\rcsilva\Desktop\Desc\ApSql.runtimeconfig.json
+C:\Users\rcsilva\Desktop\Desc\ApSql.pdb
+C:\Users\rcsilva\Desktop\Desc\System.Data.SqlClient.dll
+C:\Users\rcsilva\Desktop\Desc\runtimes\win-arm64\native\sni.dll
+C:\Users\rcsilva\Desktop\Desc\runtimes\win-x64\native\sni.dll
+C:\Users\rcsilva\Desktop\Desc\runtimes\win-x86\native\sni.dll
+C:\Users\rcsilva\Desktop\Desc\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rcsilva\Desktop\Desc\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

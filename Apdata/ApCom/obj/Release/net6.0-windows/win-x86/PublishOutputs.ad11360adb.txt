@@ -1,0 +1,8 @@
+C:\Users\rcsilva\Desktop\App\ApCom.pdb
+C:\Users\rcsilva\Desktop\App\D3DCompiler_47_cor3.dll
+C:\Users\rcsilva\Desktop\App\PenImc_cor3.dll
+C:\Users\rcsilva\Desktop\App\PresentationNative_cor3.dll
+C:\Users\rcsilva\Desktop\App\vcruntime140_cor3.dll
+C:\Users\rcsilva\Desktop\App\wpfgfx_cor3.dll
+C:\Users\rcsilva\Desktop\App\sni.dll
+C:\Users\rcsilva\Desktop\App\ApCom.exe

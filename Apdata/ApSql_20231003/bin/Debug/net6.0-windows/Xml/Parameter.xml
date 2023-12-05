@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConnectionString>Data Source=#Server#;Initial Catalog=#DataBase#;TrustServerCertificate=True;Integrated Security=true;</ConnectionString>
+  <SelectDatabase>select name from sys.databases where name like 'C%_%' and state = 0;</SelectDatabase>
+  <DatabaseList>
+    <Database>SRVBDGP01LXX</Database>
+	<Database>SRVBDGP02LXX</Database>
+	<Database>SRVBDGP03LXX</Database>
+	<Database>SRVBDGP04LXX</Database>
+	<Database>SRVBDGP05LXX</Database>
+	<Database>SRVBDGP06LXX</Database>
+	<Database>SRVBDGP07LXX</Database>
+	<Database>SRVBDGP08LXX</Database>
+	<Database>SRVBDGP09LXX</Database>
+	<Database>SRVBDGP10LXX</Database>
+	<Database>SRVBDGP11LXX</Database>
+	<Database>SRVBDGP12LXX</Database>
+	<Database>SRVBDGP13LXX</Database>
+	<Database>SRVBDGP14LXX</Database>
+  </DatabaseList>
+</Parameter>

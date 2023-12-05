@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCluster xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cluster>
+    <Key>dummy</Key>
+    <ClusterList>
+      <Cluster>a</Cluster>
+	  <Cluster>b</Cluster>
+    </ClusterList>
+  </Cluster>
+</ArrayOfCluster>

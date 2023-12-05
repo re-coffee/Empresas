@@ -1,0 +1,8 @@
+C:\Users\rcsilva\Desktop\Vfinal\ApSql.pdb
+C:\Users\rcsilva\Desktop\Vfinal\D3DCompiler_47_cor3.dll
+C:\Users\rcsilva\Desktop\Vfinal\PenImc_cor3.dll
+C:\Users\rcsilva\Desktop\Vfinal\PresentationNative_cor3.dll
+C:\Users\rcsilva\Desktop\Vfinal\vcruntime140_cor3.dll
+C:\Users\rcsilva\Desktop\Vfinal\wpfgfx_cor3.dll
+C:\Users\rcsilva\Desktop\Vfinal\sni.dll
+C:\Users\rcsilva\Desktop\Vfinal\ApSql.exe

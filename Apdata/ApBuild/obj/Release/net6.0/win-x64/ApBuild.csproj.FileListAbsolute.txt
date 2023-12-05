@@ -462,7 +462,6 @@ S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\dbgshim.dll
 S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\hostfxr.dll
 S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\hostpolicy.dll
 S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\mscordaccore.dll
-S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\mscordaccore_amd64_amd64_6.0.1122.52304.dll
 S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\mscordbi.dll
 S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\mscorrc.dll
 S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\msquic.dll
@@ -478,3 +477,4 @@ S:\Sof\Empresas\Apdata\ApBuild\obj\Release\net6.0\win-x64\refint\ApBuild.dll
 S:\Sof\Empresas\Apdata\ApBuild\obj\Release\net6.0\win-x64\ApBuild.pdb
 S:\Sof\Empresas\Apdata\ApBuild\obj\Release\net6.0\win-x64\ApBuild.genruntimeconfig.cache
 S:\Sof\Empresas\Apdata\ApBuild\obj\Release\net6.0\win-x64\ref\ApBuild.dll
+S:\Sof\Empresas\Apdata\ApBuild\bin\Release\net6.0\win-x64\mscordaccore_amd64_amd64_6.0.2223.42425.dll

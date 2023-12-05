@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCluster xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cluster>
+    <Key>b</Key>
+    <ClusterList>
+      <Cluster>yuio</Cluster>
+      <Cluster>tyui</Cluster>
+    </ClusterList>
+  </Cluster>
+  <Cluster>
+    <Key>All</Key>
+    <ClusterList>
+      <Cluster>192.168.10.135\sql16,54969:C457_TEMP_PHIBRO_743171</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C442_HOM_DROGARIA_SP</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C000_OFI_IMPLANTACAO</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C456_HOM_Informa_Markets</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C466_OFI_SYLVAMO</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C465_OFI_GSH</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C467_OFI_BANCO_MERCEDES_BENZ</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C442_OFI_DROGARIA_SP</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:C436_OFI_PEOPLE_HUB</Cluster>
+      <Cluster>192.168.10.135\sql16,54969:CASPER</Cluster>
+    </ClusterList>
+  </Cluster>
+</ArrayOfCluster>

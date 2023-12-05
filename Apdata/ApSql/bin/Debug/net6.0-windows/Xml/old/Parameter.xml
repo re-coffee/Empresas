@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConnectionString>Server=#Server#;Database=#DataBase#;User Id=apdata;Password=apdata;TrustServerCertificate=True;</ConnectionString>
+  <SelectDatabase>select name from sys.databases where name like 'C%_%' and state = 0;</SelectDatabase>
+  <DatabaseList>
+    <Database>192.168.10.135\sql16,54969</Database>
+  </DatabaseList>
+</Parameter>
